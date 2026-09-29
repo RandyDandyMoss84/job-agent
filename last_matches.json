@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-29",
+  "strong_matches": [],
+  "imperfect_matches": [
+    {
+      "job": {
+        "title": "Director of Government Relations",
+        "company": "Business Council for Sustainable Energy (BCSE)",
+        "location": "Washington, DC",
+        "comp": null,
+        "url": "https://pac.org/job/director-of-government-relations-33",
+        "source": "PAC.org",
+        "raw_description": "Director of Government Relations",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 75,
+      "reasons": [
+        "track: strategic_comms (matched 'government relations')",
+        "sector match: 'energy'",
+        "location eligibility unclear \u2014 verify manually before treating as a match",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "PR Specialist, Worldwide Sustainability Communications",
+        "company": "Amazon",
+        "location": "Boston, MA | Seattle, WA | Arlington, VA | New York, NY",
+        "comp": null,
+        "url": "https://pac.org/job/pr-specialist-worldwide-sustainability-communications",
+        "source": "PAC.org",
+        "raw_description": "PR Specialist, Worldwide Sustainability Communications",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 65,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'sustainability'",
+        "location eligibility unclear \u2014 verify manually before treating as a match",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager",
+        "company": "Cylindo",
+        "location": "Remote (MA, NC)",
+        "comp": null,
+        "url": "https://pac.org/job/senior-product-marketing-manager",
+        "source": "PAC.org",
+        "raw_description": "Senior Product Marketing Manager",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 60,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "location eligibility unclear \u2014 verify manually before treating as a match",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 60/100"
+      ]
+    }
+  ]
+}
