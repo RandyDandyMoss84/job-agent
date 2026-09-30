@@ -129,6 +129,9 @@ WATCHLIST_COMPANIES = {
     # Confirmed live against each company's public ATS API 2026-09-11.
     "Renew Home": ("workable", "renewhome"),
     "Moment Energy": ("greenhouse", "momentenergy"),
+    # Track B target company from the Sept 2026 brief — confirmed live 2026-09-30
+    # via its careers page's embed script (clir.bamboohr.com/js/embed.js).
+    "Clir Renewables": ("bamboohr", "clir"),
     # General Fusion recruits via ADP Workforce Now, not Greenhouse — "generalfusion"
     # 404s against the Greenhouse API. ADP's careers page is a JS SPA with no static
     # job data (https://workforcenow.adp.com/.../recruitment.html?cid=3196ba6f-d49c-4493-9290-3d91489bdfa9&ccId=19000101_000001),
@@ -140,6 +143,15 @@ WATCHLIST_COMPANIES = {
     # https://careers.risepeople.com/foresightcanada/en/... (e.g. job ids 16130,
     # 7360). sources.py has no "risepeople" fetcher yet — same documented-gap
     # pattern as General Fusion above, left out until that's built.
+    #
+    # Checked against the brief's other named targets 2026-09-30, none added:
+    # Voltus, Loopio, Climatiq, Pani Energy — no company-run ATS found (search-
+    # engine-indexable job boards only, e.g. Indeed/Glassdoor, not scrapable
+    # the way a direct ATS is). Teck Resources, Ivanhoe Mines, Lithium Americas,
+    # D-Wave Quantum, Hill+Knowlton Canada — each confirmed to exist but on a
+    # different complex ATS per company (Workday, Rippling, a custom "Simplify
+    # HR" portal, iCIMS) that would each need its own UltiPro-style reverse-
+    # engineering effort, not done yet.
 }
 
 SOURCES_ENABLED = {
@@ -155,6 +167,7 @@ SOURCES_ENABLED = {
     # plain requests.get().
     "climatetechlist": False,  # JS-rendered; needs Playwright/Selenium or an API — off by default
     "pac_org": True,  # Public Affairs Council jobs board — confirmed live 2026-09-29
+    "odgers_berndtson": True,  # exec search firm's public opportunities board — confirmed live 2026-09-30
     # Not added: CIRI's Career Hub is member-login-gated (not scraping around
     # that); Product Marketing Alliance's jobs.* subdomain from the brief no
     # longer resolves (site restructured); Hill Times Careers and Foresight's
@@ -180,12 +193,12 @@ LAST_MATCHES_FILE = "last_matches.json"  # cache of the last non-empty match set
 # --- Email ---
 # Deliberately EMAIL_ENABLED = False in this cloud copy — no SMTP password is
 # stored here at all. With it False, main.py prints the digest to stdout
-# instead of emailing (see emailer.py's send_digest). The cloud Routine's own
-# prompt is responsible for reading that stdout output and sending it via the
-# user's Gmail MCP connector instead of smtplib — no credential to leak.
-# The LOCAL copy of this repo (~/job-agent, not this one) is the one with
-# real SMTP settings, used by the local cron job; never merge that version's
-# email block back into what gets pushed here.
+# instead of emailing (see emailer.py's send_digest), and writes it to
+# pending_digest.json too — the cloud Routine's own prompt reads that file
+# and sends it via the Gmail MCP connector instead of smtplib, no credential
+# to leak. The LOCAL copy of this repo (~/job-agent, not this one) is the one
+# with real SMTP settings, used by the local cron job; never copy that
+# version's email block back into what gets pushed here.
 EMAIL_ENABLED = False
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
