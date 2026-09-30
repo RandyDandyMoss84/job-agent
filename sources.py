@@ -578,3 +578,88 @@ def fetch_pac_org():
             "company_stage": classify_stage(company),
         })
     return jobs
+
+
+def fetch_bamboohr_company(slug, company_name=None):
+    """
+    Generic fetcher for any company using BambooHR's public job board (a
+    common ATS for small/mid Canadian companies — confirmed live 2026-09-30
+    against slug "clir" / Clir Renewables, found via its careers page embed
+    script src="https://clir.bamboohr.com/js/embed.js"). Public JSON API:
+    GET https://{slug}.bamboohr.com/careers/list — no auth needed. No salary
+    field in this endpoint. Detail URL confirmed as
+    https://{slug}.bamboohr.com/careers/{id} (200, matches the embed's own
+    link pattern).
+    """
+    url = f"https://{slug}.bamboohr.com/careers/list"
+    resp = requests.get(url, headers=HEADERS, timeout=15)
+    resp.raise_for_status()
+    data = resp.json()
+
+    display_name = company_name or slug
+    jobs = []
+    for job in data.get("result", []):
+        loc = job.get("location") or {}
+        ats_loc = job.get("atsLocation") or {}
+        location = ", ".join(
+            part for part in (
+                loc.get("city"), loc.get("state"),
+                ats_loc.get("city"), ats_loc.get("province"),
+                ats_loc.get("state"), ats_loc.get("country"),
+            ) if part
+        )
+        title = (job.get("jobOpeningName") or "").strip()
+        jobs.append({
+            "title": title,
+            "company": display_name,
+            "location": location,
+            "comp": None,
+            "url": f"https://{slug}.bamboohr.com/careers/{job.get('id', '')}",
+            "source": f"BambooHR/{slug}",
+            "raw_description": f"{title}. {job.get('departmentLabel') or ''}".strip(),
+            "company_stage": classify_stage(display_name),
+        })
+    return jobs
+
+
+def fetch_odgers_opportunities():
+    """
+    Odgers Berndtson's public Opportunities Board (opportunities-board.
+    odgersberndtson.com) — the executive search firm's list of roles it's
+    actively recruiting for on behalf of clients, flagged in the Sept 2026
+    brief ("Odgers actively running senior IR searches"). Confirmed live
+    2026-09-30: plain server-rendered HTML, no API. Global board (UK/NHS/
+    international roles dominate, not Canada-filtered) — no separate
+    Canada-only URL found, so this is a firehose like GoodWork.ca/Brookfield:
+    pull everything, let filters.py's own title/sector/location matching do
+    the real filtering. Each listing is an <a class="opboard_link"
+    href="javascript:odg_page('/Roles/Role/{slug}/{id}/');"> whose real URL
+    is that path appended to the board's own domain (confirmed 200). No
+    separate company/location/salary fields — title text packs whatever the
+    posting includes (often "Role - Client | Location | Salary"), same
+    packed-string pattern as GoodWork.ca.
+    """
+    resp = requests.get(
+        "https://opportunities-board.odgersberndtson.com/", headers=HEADERS, timeout=15
+    )
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    jobs = []
+    for link in soup.select("a.opboard_link"):
+        title = link.get_text(strip=True)
+        href = link.get("href", "")
+        match = re.search(r"odg_page\('([^']+)'\)", href)
+        if not match or not title:
+            continue
+        jobs.append({
+            "title": title,
+            "company": None,
+            "location": "",
+            "comp": None,
+            "url": f"https://opportunities-board.odgersberndtson.com{match.group(1)}",
+            "source": "Odgers Berndtson",
+            "raw_description": title,
+            "company_stage": "Unknown — executive search listing, client company not separately identified",
+        })
+    return jobs

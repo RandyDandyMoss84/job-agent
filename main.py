@@ -17,7 +17,6 @@ one that runs, instead of depending on the Mac being awake at one exact minute.
 """
 
 import datetime
-import json
 import sys
 import traceback
 
@@ -25,7 +24,8 @@ from config import SOURCES_ENABLED, WATCHLIST_COMPANIES, JOBBANK_QUERIES
 from sources import (
     fetch_remote_rocketship, fetch_goodwork_ca, fetch_jobbank_canada,
     fetch_brookfield_renewable, fetch_wellfound, fetch_fusion_energy_base,
-    fetch_climatebase, fetch_pac_org, fetch_workable_company, fetch_greenhouse_company,
+    fetch_climatebase, fetch_pac_org, fetch_odgers_opportunities,
+    fetch_workable_company, fetch_greenhouse_company, fetch_bamboohr_company,
 )
 from filters import evaluate_job
 from storage import (
@@ -95,6 +95,13 @@ def fetch_all_jobs():
             print("PAC.org fetch failed:")
             traceback.print_exc()
 
+    if SOURCES_ENABLED.get("odgers_berndtson"):
+        try:
+            jobs += fetch_odgers_opportunities()
+        except Exception:
+            print("Odgers Berndtson fetch failed:")
+            traceback.print_exc()
+
     if SOURCES_ENABLED.get("watchlist_companies"):
         for name, (ats_type, slug) in WATCHLIST_COMPANIES.items():
             try:
@@ -102,6 +109,8 @@ def fetch_all_jobs():
                     jobs += fetch_workable_company(slug)
                 elif ats_type == "greenhouse":
                     jobs += fetch_greenhouse_company(slug)
+                elif ats_type == "bamboohr":
+                    jobs += fetch_bamboohr_company(slug, company_name=name)
             except Exception:
                 print(f"{name} ({ats_type}/{slug}) fetch failed:")
                 traceback.print_exc()
@@ -187,14 +196,6 @@ def main():
         if carried_over_date
         else "Your daily job alert digest"
     )
-
-    # Written regardless of EMAIL_ENABLED so a caller that isn't using smtplib
-    # (e.g. the cloud Routine, which sends via the Gmail MCP connector
-    # instead) has a reliable, structured place to read today's subject/body
-    # from, instead of scraping terminal output.
-    with open("pending_digest.json", "w") as f:
-        json.dump({"subject": subject, "html": digest}, f)
-
     send_digest(digest, subject=subject)
     save_seen(seen | newly_seen)
     if carried_over_date is None:
