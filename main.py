@@ -17,6 +17,7 @@ one that runs, instead of depending on the Mac being awake at one exact minute.
 """
 
 import datetime
+import json
 import sys
 import traceback
 
@@ -196,6 +197,17 @@ def main():
         if carried_over_date
         else "Your daily job alert digest"
     )
+
+    # Written regardless of EMAIL_ENABLED so a caller that isn't using smtplib
+    # (e.g. the cloud Routine, which sends via the Gmail MCP connector
+    # instead) has a reliable, structured place to read today's subject/body
+    # from, instead of scraping terminal output. (Restored 2026-09-30 — an
+    # earlier commit dropped this write while leaving a comment elsewhere
+    # claiming it still happened, which would have silently broken the cloud
+    # Routine's email step.)
+    with open("pending_digest.json", "w") as f:
+        json.dump({"subject": subject, "html": digest}, f)
+
     send_digest(digest, subject=subject)
     save_seen(seen | newly_seen)
     if carried_over_date is None:
