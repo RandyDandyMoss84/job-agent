@@ -67,20 +67,19 @@ def evaluate_job(job):
     core_hits = _contains_any(full_text, SECTOR_KEYWORDS_CORE)
     broad_hits = _contains_any(full_text, SECTOR_KEYWORDS_BROAD)
 
-    if track == "strategic_comms":
-        if not core_hits and not broad_hits:
-            return False, False, 0, [
-                "no energy/climate/cleantech/fintech/healthtech/infrastructure "
-                "sector signal found — required for Track A"
-            ]
+    # Sector is a scoring signal for both tracks (changed 2026-09-30 — Track A's
+    # hard sector gate was dropping legitimate senior comms/gov-relations roles
+    # at sector-relevant companies whose listing text just doesn't literally
+    # say "energy"/"climate"/etc., e.g. a power-generation company that only
+    # names itself. Sector match still boosts the score via _score_job's
+    # sector_is_core; it just no longer blocks the listing outright. Location
+    # (below) is the hard requirement instead.
+    if core_hits or broad_hits:
         reasons.append(f"sector match: {(core_hits or broad_hits)[0]!r}")
+    elif track == "strategic_comms":
+        reasons.append("no energy/climate/fintech/healthtech/infrastructure sector signal found — kept anyway, scored lower")
     else:
-        # Track B is sector-agnostic — never gated here. A sector hit is a
-        # nice-to-have for scoring, not a requirement.
-        if core_hits or broad_hits:
-            reasons.append(f"sector match (bonus, not required for Track B): {(core_hits or broad_hits)[0]!r}")
-        else:
-            reasons.append("Track B — sector not required")
+        reasons.append("Track B — sector not required")
 
     # 4. Location — hard reject on explicit US-only/visa-required language
     reject_hits = _contains_any(full_text, LOCATION_REJECT_PHRASES)
@@ -91,16 +90,22 @@ def evaluate_job(job):
         # Explicit US-only / must-be-US-authorized / visa-required language
         return False, False, 0, [f"location restriction found ({reject_hits[0]}) — not Canada-eligible"]
 
-    is_strong_match = True
+    # Location is a hard requirement (changed 2026-09-30, alongside loosening
+    # the sector gate above): must be confirmed remote-eligible or Canada/
+    # Vancouver-based, not just "unclear" — an ambiguous listing is dropped
+    # rather than kept and flagged for manual verification.
     location_confirmed = bool(accept_hits) or is_canada_native
+    if not location_confirmed:
+        return False, False, 0, [
+            "not confirmed remote-eligible or Vancouver/BC/Canada-based — "
+            "required, so dropped rather than kept as ambiguous"
+        ]
 
+    is_strong_match = True
     if accept_hits:
         reasons.append(f"Canada/remote eligibility confirmed ({accept_hits[0]})")
-    elif is_canada_native:
-        reasons.append(f"Canada eligibility assumed — {job.get('source')} is a Canada-native board")
     else:
-        reasons.append("location eligibility unclear — verify manually before treating as a match")
-        is_strong_match = False
+        reasons.append(f"Canada eligibility assumed — {job.get('source')} is a Canada-native board")
 
     # 5. Comp — judged in CAD; the floor depends on track (Track B trades comp
     # for equity/experience, so its floor is much lower — see config.py). An
