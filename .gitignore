@@ -3,3 +3,4 @@ __pycache__/
 run.log
 launchd.log
 .DS_Store
+pending_digest.json
