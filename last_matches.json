@@ -1,27 +1,48 @@
 {
-  "date": "2026-10-01",
-  "strong_matches": [
+  "date": "2026-10-02",
+  "strong_matches": [],
+  "imperfect_matches": [
     {
       "job": {
-        "title": "manager, communications",
-        "company": "Orano Canada Inc.",
-        "location": "Regina (SK)",
-        "comp": "$135,650 - $159,600",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50391206",
+        "title": "communications manager",
+        "company": "Recrute Action",
+        "location": "Toronto (ON)",
+        "comp": "$60.00 to $65.00 hourly",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50407826",
         "source": "Job Bank Canada",
-        "raw_description": "manager, communications",
+        "raw_description": "communications manager",
         "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
-      "score": 75,
+      "score": 65,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
         "no energy/climate/fintech/healthtech/infrastructure sector signal found \u2014 kept anyway, scored lower",
-        "Canada/remote eligibility confirmed (canada)",
-        "comp meets the $150,000-$180,000 CAD target (~$159,600 CAD)",
-        "match score: 75/100"
+        "Canada eligibility assumed \u2014 Job Bank Canada is a Canada-native board",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "communications manager",
+        "company": "Recrute Action",
+        "location": "Toronto (ON)",
+        "comp": "$60.00 to $65.00 hourly",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50407806",
+        "source": "Job Bank Canada",
+        "raw_description": "communications manager",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 65,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no energy/climate/fintech/healthtech/infrastructure sector signal found \u2014 kept anyway, scored lower",
+        "Canada eligibility assumed \u2014 Job Bank Canada is a Canada-native board",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
       ]
     }
-  ],
-  "imperfect_matches": []
+  ]
 }
