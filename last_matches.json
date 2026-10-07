@@ -1,26 +1,25 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Marketing and Communications Manager, full-time, The B.C Wildlife Federation, Surrey BC",
+        "title": "Senior Communications Manager, full-time, Environmental Defence Canada, Toronto or Ottawa, Ontario",
         "company": null,
         "location": null,
         "comp": null,
-        "url": "https://goodwork.ca/jobs/marketing-and-communications-manager-jobs-76782",
+        "url": "https://goodwork.ca/jobs/communications-manager-and-digital-campaigning-jobs-76775",
         "source": "GoodWork.ca",
-        "raw_description": "Marketing and Communications Manager, full-time, The B.C Wildlife Federation, Surrey BC",
+        "raw_description": "Senior Communications Manager, full-time, Environmental Defence Canada, Toronto or Ottawa, Ontario",
         "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
       },
-      "score": 65,
+      "score": 75,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
         "no energy/climate/fintech/healthtech/infrastructure sector signal found \u2014 kept anyway, scored lower",
-        "Canada eligibility assumed \u2014 GoodWork.ca is a Canada-native board",
+        "Canada/remote eligibility confirmed (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
+        "match score: 75/100"
       ]
     }
   ]
