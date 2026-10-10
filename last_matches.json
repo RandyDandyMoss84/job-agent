@@ -1,25 +1,26 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-10",
   "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Senior Communications Manager, full-time, Environmental Defence Canada, Toronto or Ottawa, Ontario",
-        "company": null,
-        "location": null,
-        "comp": null,
-        "url": "https://goodwork.ca/jobs/communications-manager-and-digital-campaigning-jobs-76775",
-        "source": "GoodWork.ca",
-        "raw_description": "Senior Communications Manager, full-time, Environmental Defence Canada, Toronto or Ottawa, Ontario",
-        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
+        "title": "communications manager",
+        "company": "Horizon Health Network",
+        "location": "Saint John (NB)  Fredericton (NB)  Waterville (NB)  Moncton (NB)  Miramichi (NB)",
+        "comp": "$34.62 to $89.74 hourly",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50467098",
+        "source": "Job Bank Canada",
+        "raw_description": "communications manager",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
-      "score": 75,
+      "score": 65,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
         "no energy/climate/fintech/healthtech/infrastructure sector signal found \u2014 kept anyway, scored lower",
-        "Canada/remote eligibility confirmed (canada)",
+        "Canada eligibility assumed \u2014 Job Bank Canada is a Canada-native board",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
+        "match score: 65/100"
       ]
     }
   ]
