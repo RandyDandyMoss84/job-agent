@@ -21,7 +21,7 @@ import json
 import sys
 import traceback
 
-from config import SOURCES_ENABLED, WATCHLIST_COMPANIES, JOBBANK_QUERIES
+from config import SOURCES_ENABLED, WATCHLIST_COMPANIES, JOBBANK_QUERIES, WELLFOUND_LOCATIONS
 from sources import (
     fetch_remote_rocketship, fetch_goodwork_ca, fetch_jobbank_canada,
     fetch_brookfield_renewable, fetch_wellfound, fetch_fusion_energy_base,
@@ -69,11 +69,12 @@ def fetch_all_jobs():
             traceback.print_exc()
 
     if SOURCES_ENABLED.get("wellfound"):
-        try:
-            jobs += fetch_wellfound()
-        except Exception:
-            print("Wellfound fetch failed:")
-            traceback.print_exc()
+        for location in WELLFOUND_LOCATIONS:
+            try:
+                jobs += fetch_wellfound(location=location)
+            except Exception:
+                print(f"Wellfound fetch failed (location={location!r}):")
+                traceback.print_exc()
 
     if SOURCES_ENABLED.get("fusion_energy_base"):
         try:

@@ -132,6 +132,15 @@ WATCHLIST_COMPANIES = {
     # Track B target company from the Sept 2026 brief — confirmed live 2026-09-30
     # via its careers page's embed script (clir.bamboohr.com/js/embed.js).
     "Clir Renewables": ("bamboohr", "clir"),
+    # BC-based tech companies added 2026-10-16 to broaden Canadian/British Columbia
+    # coverage — confirmed live against each company's public Greenhouse board API.
+    # "company" field in the resulting job dicts is the ats_slug (lowercase), which
+    # is enough for filters.py's sector/keyword matching against full_text.
+    "Later": ("greenhouse", "later"),  # Vancouver — has had Track A titles (e.g. "Senior Manager, PR")
+    "Hootsuite": ("greenhouse", "hootsuite"),  # Vancouver
+    "Thinkific": ("greenhouse", "thinkific"),  # Vancouver
+    "Unbounce": ("greenhouse", "unbounce"),  # Vancouver
+    "MetaLab": ("greenhouse", "metalab"),  # Victoria, BC
     # General Fusion recruits via ADP Workforce Now, not Greenhouse — "generalfusion"
     # 404s against the Greenhouse API. ADP's careers page is a JS SPA with no static
     # job data (https://workforcenow.adp.com/.../recruitment.html?cid=3196ba6f-d49c-4493-9290-3d91489bdfa9&ccId=19000101_000001),
@@ -147,7 +156,12 @@ WATCHLIST_COMPANIES = {
     # Checked against the brief's other named targets 2026-09-30, none added:
     # Voltus, Loopio, Climatiq, Pani Energy — no company-run ATS found (search-
     # engine-indexable job boards only, e.g. Indeed/Glassdoor, not scrapable
-    # the way a direct ATS is). Teck Resources, Ivanhoe Mines, Lithium Americas,
+    # the way a direct ATS is). [Correction 2026-10-16: Voltus actually does have
+    # a public Lever board — api.lever.co/v0/postings/voltus — confirmed live,
+    # 20 jobs returned. Not wired up: sources.py has no Lever fetcher yet, same
+    # documented-gap pattern as ADP/Rise People above. Also not BC-based (US),
+    # so left out of this round, which focused on Canadian/BC coverage.]
+    # Teck Resources, Ivanhoe Mines, Lithium Americas,
     # D-Wave Quantum, Hill+Knowlton Canada — each confirmed to exist but on a
     # different complex ATS per company (Workday, Rippling, a custom "Simplify
     # HR" portal, iCIMS) that would each need its own UltiPro-style reverse-
@@ -184,6 +198,13 @@ JOBBANK_QUERIES = [
     "government relations", "stakeholder relations", "chief of staff",
     "product marketing",
 ]
+
+# Wellfound location pages fetched each run (see fetch_wellfound in sources.py).
+# "vancouver" is the city page; "british-columbia" is the province page — confirmed
+# 2026-10-16 to return a broader set of startups than "vancouver" alone (5 pages vs.
+# 4, including companies outside Vancouver proper e.g. Victoria/Burnaby-based ones).
+# Overlap between the two is expected and harmless — main.py dedupes by job URL.
+WELLFOUND_LOCATIONS = ["vancouver", "british-columbia"]
 
 # --- Storage ---
 SEEN_JOBS_FILE = "seen_jobs.json"
