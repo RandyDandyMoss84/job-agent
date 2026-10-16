@@ -29,7 +29,7 @@ HEADERS = {
 }
 
 
-def fetch_remote_rocketship(query="senior-communications", max_pages=10):
+def fetch_remote_rocketship(query="senior-communications", max_pages=10, region="us"):
     """
     Remote Rocketship is a Next.js app: the listing page's rendered HTML is
     useless for scraping, but each page embeds a <script id="__NEXT_DATA__">
@@ -42,7 +42,8 @@ def fetch_remote_rocketship(query="senior-communications", max_pages=10):
     usefully — the *direct* posting URL (e.g. the underlying Greenhouse/
     Workable link), not a remoterocketship.com redirect.
     """
-    base_url = f"https://www.remoterocketship.com/us/jobs/{query}/"
+    base_url = f"https://www.remoterocketship.com/{region}/jobs/{query}/"
+    source_name = "Remote Rocketship" if region == "us" else f"Remote Rocketship ({region.upper()})"
     jobs = []
     total_job_count = None
     page = 1
@@ -70,10 +71,12 @@ def fetch_remote_rocketship(query="senior-communications", max_pages=10):
             jobs.append({
                 "title": job.get("roleTitle", ""),
                 "company": company.get("name"),
-                "location": job.get("location"),
-                "comp": salary.get("salaryHumanReadableText"),
+                "location": _rr_location(job, region),
+                # the site tags each salary with its own currency code; passing
+                # "CAD" through lets filters.py skip the USD->CAD conversion
+                "comp": _rr_comp(salary),
                 "url": job.get("url", ""),
-                "source": "Remote Rocketship",
+                "source": source_name,
                 "raw_description": job.get("twoLineJobDescriptionSummary")
                 or job.get("jobDescriptionSummary")
                 or job.get("roleTitle", ""),
@@ -90,6 +93,30 @@ def fetch_remote_rocketship(query="senior-communications", max_pages=10):
         page += 1
 
     return jobs
+
+
+def _rr_location(job, region):
+    """
+    The primary "location" can read "United States" or "Germany" for a job that
+    is also open to Canada — the full list lives in locationCountries. Merge both
+    so "Canada" is visible to filters.py, and tag anything on the /ca/ feed as
+    Canada-eligible even when only "Worldwide" is listed.
+    """
+    parts = [job.get("location") or ""]
+    for country in job.get("locationCountries") or []:
+        if country not in parts[0]:
+            parts.append(country)
+    text = "; ".join(p for p in parts if p)
+    if region == "ca" and "canada" not in text.lower():
+        text = f"{text}; Canada-eligible" if text else "Canada-eligible"
+    return text
+
+
+def _rr_comp(salary):
+    text = salary.get("salaryHumanReadableText")
+    if text and salary.get("currencyCode") == "CAD":
+        return f"{text} CAD"
+    return text
 
 
 def fetch_goodwork_ca():
@@ -199,7 +226,7 @@ def fetch_greenhouse_company(slug):
     return jobs
 
 
-def fetch_jobbank_canada(query="communications director"):
+def fetch_jobbank_canada(query="communications director", location=None):
     """
     Canada's official Job Bank (jobbank.gc.ca). Confirmed live 2026-09-11.
     Gotcha: the RSS/Atom feed at /jobsearch/feed/jobSearchRSSfeed silently
@@ -213,14 +240,16 @@ def fetch_jobbank_canada(query="communications director"):
     codes) in the page HTML; (2) GET that embedded RSS link with the same
     session. Each entry's <summary> packs "Job number"/"Location"/
     "Employer"/"Salary" as labeled inline HTML rather than separate fields,
-    parsed out below.
+    parsed out below. `location` (e.g. "Vancouver, BC") narrows the search page
+    with Job Bank's own locationstring param — confirmed 2026-10-16 to change
+    the result set (8 postings for "communications director" in Vancouver).
     """
     session = requests.Session()
     session.headers.update(HEADERS)
 
     search_resp = session.get(
         "https://www.jobbank.gc.ca/jobsearch/jobsearch",
-        params={"searchstring": query, "sort": "D"},
+        params={"searchstring": query, "sort": "D", **({"locationstring": location} if location else {})},
         timeout=15,
     )
     search_resp.raise_for_status()
@@ -662,4 +691,48 @@ def fetch_odgers_opportunities():
             "raw_description": title,
             "company_stage": "Unknown — executive search listing, client company not separately identified",
         })
+    return jobs
+
+
+def fetch_bcjobs(queries):
+    """
+    BCjobs.ca — a BC-focused job board, added 2026-10-16 for the Vancouver/BC
+    focus. Its robots.txt is "User-agent: * / Allow: /" (only named SEO/AI
+    crawlers are throttled or blocked), the search pages are plain
+    server-rendered HTML with no bot challenge. Each result is an <a
+    class="joblist" href="/jobs/{slug}-{id}" title="..."> holding the title
+    (h2), a location pill ("Vancouver, BC") and a posted date. No salary or
+    company on the list page, so comp is None and company is None — filters.py
+    judges those as unknown. One request per query, with a short pause between
+    them to stay polite.
+    """
+    import time
+
+    jobs = []
+    for i, query in enumerate(queries):
+        if i:
+            time.sleep(2)
+        resp = requests.get(
+            "https://www.bcjobs.ca/search-jobs", params={"q": query},
+            headers=HEADERS, timeout=15,
+        )
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for link in soup.select("a.joblist[href^='/jobs/']"):
+            title = (link.get("title") or "").strip()
+            if not title:
+                h2 = link.select_one("h2")
+                title = h2.get_text(strip=True) if h2 else ""
+            pin = link.select_one("img.list__filter-icon")
+            location = pin.parent.get_text(strip=True) if pin and pin.parent else ""
+            jobs.append({
+                "title": title,
+                "company": None,
+                "location": location,
+                "comp": None,
+                "url": "https://www.bcjobs.ca" + link["href"],
+                "source": "BCjobs.ca",
+                "raw_description": f"{title}. {location}".strip(),
+                "company_stage": "Unknown — BCjobs.ca list page doesn't show the employer",
+            })
     return jobs

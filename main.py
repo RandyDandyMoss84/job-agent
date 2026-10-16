@@ -21,12 +21,16 @@ import json
 import sys
 import traceback
 
-from config import SOURCES_ENABLED, WATCHLIST_COMPANIES, JOBBANK_QUERIES, WELLFOUND_LOCATIONS
+from config import (
+    SOURCES_ENABLED, WATCHLIST_COMPANIES, JOBBANK_QUERIES, JOBBANK_VANCOUVER_QUERIES,
+    RR_CA_QUERIES, WELLFOUND_LOCATIONS, BCJOBS_QUERIES,
+)
 from sources import (
     fetch_remote_rocketship, fetch_goodwork_ca, fetch_jobbank_canada,
     fetch_brookfield_renewable, fetch_wellfound, fetch_fusion_energy_base,
     fetch_climatebase, fetch_pac_org, fetch_odgers_opportunities,
     fetch_workable_company, fetch_greenhouse_company, fetch_bamboohr_company,
+    fetch_bcjobs,
 )
 from filters import evaluate_job
 from storage import (
@@ -59,6 +63,12 @@ def fetch_all_jobs():
                 jobs += fetch_jobbank_canada(query)
             except Exception:
                 print(f"Job Bank Canada fetch failed (query={query!r}):")
+                traceback.print_exc()
+        for query in JOBBANK_VANCOUVER_QUERIES:
+            try:
+                jobs += fetch_jobbank_canada(query, location="Vancouver, BC")
+            except Exception:
+                print(f"Job Bank Canada (Vancouver) fetch failed (query={query!r}):")
                 traceback.print_exc()
 
     if SOURCES_ENABLED.get("brookfield_renewable"):
@@ -102,6 +112,21 @@ def fetch_all_jobs():
             jobs += fetch_odgers_opportunities()
         except Exception:
             print("Odgers Berndtson fetch failed:")
+            traceback.print_exc()
+
+    if SOURCES_ENABLED.get("remote_rocketship_ca"):
+        for query in RR_CA_QUERIES:
+            try:
+                jobs += fetch_remote_rocketship(query, max_pages=1, region="ca")
+            except Exception:
+                print(f"Remote Rocketship CA fetch failed (query={query!r}):")
+                traceback.print_exc()
+
+    if SOURCES_ENABLED.get("bcjobs"):
+        try:
+            jobs += fetch_bcjobs(BCJOBS_QUERIES)
+        except Exception:
+            print("BCjobs.ca fetch failed:")
             traceback.print_exc()
 
     if SOURCES_ENABLED.get("watchlist_companies"):

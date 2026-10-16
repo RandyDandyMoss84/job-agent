@@ -47,16 +47,45 @@ SENIORITY_KEYWORDS = [
 # job posting and defeated the gate entirely. Both CORE and BROAD are treated
 # as equally strong matches (see filters.py) — the split is kept only to
 # label which sector a job matched on in the digest.
+#
+# Matching is whole-word (see _contains_any in filters.py), which is what makes
+# short words like "mining", "tech", and "software" safe to use here: "mining"
+# no longer hits "determining". Updated 2026-10-16 to add mining, industrial,
+# construction, tech and startups on request; the comp floors in filters.py
+# apply to every sector equally, so none of these loosen the salary rules.
 SECTOR_KEYWORDS_CORE = [
-    "energy", "climate", "cleantech", "clean tech", "renewable", "renewables",
-    "sustainability", "esg", "decarbonization", "clean energy", "fusion",
-    "battery storage", "energy storage",
+    # energy / cleantech
+    "energy", "climate", "cleantech", "clean tech", "clean technology",
+    "climate tech", "climatetech", "renewable", "renewables", "sustainability",
+    "esg", "decarbonization", "decarbonisation", "clean energy", "green energy",
+    "sustainable energy", "energy transition", "net zero", "net-zero",
+    "low carbon", "low-carbon", "carbon capture", "carbon credits", "fusion",
+    "battery", "battery storage", "energy storage", "hydrogen", "nuclear",
+    "solar", "wind energy", "wind power", "hydroelectric", "hydropower",
+    "geothermal", "electrification", "oil and gas", "lng", "power generation",
+    "electric utility",
+    # mining and resources
+    "mining", "mineral", "minerals", "critical minerals", "mineral exploration",
+    "metals", "copper", "lithium", "uranium", "nickel", "zinc", "rare earth",
+    "rare earths", "natural resources", "resource sector", "mine site",
+    # industrial
+    "industrial", "manufacturing", "heavy industry", "skilled trades",
 ]
 
 SECTOR_KEYWORDS_BROAD = [
-    # tech / apps — qualified phrases, not bare words
+    # tech / apps
+    "tech", "technology sector", "technology industry", "software",
+    "artificial intelligence", "machine learning", "cybersecurity",
+    "semiconductor", "quantum", "data centre", "data center", "tech startup",
     "software company", "technology company", "tech company", "saas",
     "mobile app", "consumer app", "app development", "enterprise software",
+    # construction
+    "construction", "engineering and construction", "general contractor",
+    "civil engineering", "building products", "real estate development",
+    "infrastructure",
+    # startups
+    "startup", "start-up", "scale-up", "scaleup", "early-stage", "early stage",
+    "venture-backed", "seed-funded", "series a", "series b", "series c",
     # commodities
     "commodities", "commodity trading", "commodities trading",
     "commodity markets", "physical commodities",
@@ -95,15 +124,38 @@ LOCATION_REJECT_PHRASES = [
 # Phrases that confirm a listing IS Canada-eligible (used to boost confidence, not required)
 LOCATION_ACCEPT_PHRASES = [
     "remote - canada", "remote, canada", "us & canada", "us and canada",
-    "canada", "vancouver", "british columbia", "remote - north america",
+    "canada", "canadian", "vancouver", "british columbia", "remote - north america",
+    "remote (canada)", "canada remote", "canada (remote)", "canada-wide",
+    "anywhere in canada", "across canada", "pan-canadian",
 ]
+
+# Vancouver/BC — Jared lives in Vancouver, so these get the "local" tier and
+# the top location score (tied with Canada-eligible remote). City names that
+# collide with other places (Richmond VA, Surrey UK, Victoria AU, Delta, Langley
+# VA) are only listed with a BC qualifier.
+LOCAL_BC_PHRASES = [
+    "vancouver", "burnaby", "british columbia", ", bc", "(bc)", "b.c.",
+    "lower mainland", "metro vancouver", "greater vancouver", "north vancouver",
+    "west vancouver", "coquitlam", "new westminster", "richmond, bc",
+    "surrey, bc", "langley, bc", "delta, bc", "victoria, bc", "kelowna",
+    "abbotsford", "nanaimo", "kamloops", "bc-based",
+]
+
+# Any of these in a job's title/location/description counts as "remote" for the
+# Canada-remote tier; boards that are remote-only by definition are listed in
+# REMOTE_NATIVE_SOURCES instead so their postings don't need to say it.
+REMOTE_SIGNAL_PHRASES = [
+    "remote", "work from home", "work from anywhere", "work remotely",
+    "fully remote", "telecommute", "distributed team", "wfh",
+]
+REMOTE_NATIVE_SOURCES = {"Remote Rocketship", "Remote Rocketship (CA)"}
 
 # Sources that are inherently Canada-based by construction (a Canadian jobs board /
 # the federal job registry) — their postings rarely say the literal word "Canada"
 # (e.g. "Toronto (ON)", "Nova Scotia"), so phrase-matching alone would wrongly leave
 # them in the "unclear" bucket. filters.py treats any job from these sources as
 # location-confirmed without needing an accept-phrase hit.
-CANADA_NATIVE_SOURCES = {"GoodWork.ca", "Job Bank Canada"}
+CANADA_NATIVE_SOURCES = {"GoodWork.ca", "Job Bank Canada", "BCjobs.ca"}
 
 # Comp is judged in CAD. Scraped comp strings (Workable/Greenhouse/Remote Rocketship)
 # are almost always USD since the employers are US entities; a string is only
@@ -111,12 +163,18 @@ CANADA_NATIVE_SOURCES = {"GoodWork.ca", "Job Bank Canada"}
 # text (e.g. a GoodWork.ca Canadian listing). USD amounts are converted to CAD
 # with FX_USD_TO_CAD below — approximate, revisit periodically.
 FX_USD_TO_CAD = 1.38
-MIN_COMP_CAD = 120_000       # Track A hard floor — below this (when comp IS listed), the job is dropped
-IDEAL_COMP_CAD_LOW = 150_000
-IDEAL_COMP_CAD_HIGH = 180_000
-# Track B (product marketing) trades comp for equity/flexibility/experience —
-# a much lower floor, per the brief ("as low as $80,000 CAD, not below").
-MIN_COMP_CAD_PRODUCT_MARKETING = 80_000
+# Updated 2026-10-16: floor $100K CAD, ceiling $150K CAD. The $100K-$150K band
+# is the target, so anything inside it gets full comp credit (IDEAL_LOW equals
+# the floor). Comp ABOVE the ceiling is never dropped — more money isn't a
+# problem — it's just noted in the digest as above the ceiling.
+MIN_COMP_CAD = 100_000       # hard floor — below this (when comp IS listed), the job is dropped
+IDEAL_COMP_CAD_LOW = 100_000
+IDEAL_COMP_CAD_HIGH = 150_000
+# Track B (product marketing) used to have its own lower $80K floor (the Sept
+# 2026 brief's equity trade-off). The 2026-10-16 instruction was a single
+# "floor needs to be 100K", so both tracks share it; set this back to 80_000 to
+# restore the Track B exception.
+MIN_COMP_CAD_PRODUCT_MARKETING = 100_000
 # Listings with no comp listed at all are kept (can't apply the floor to an unknown
 # number) but flagged "comp unknown" and scored as a partial/unclear match.
 
@@ -181,6 +239,8 @@ SOURCES_ENABLED = {
     # plain requests.get().
     "climatetechlist": False,  # JS-rendered; needs Playwright/Selenium or an API — off by default
     "pac_org": True,  # Public Affairs Council jobs board — confirmed live 2026-09-29
+    "remote_rocketship_ca": True,  # Remote Rocketship's /ca/ feed — Canada-eligible remote, 2026-10-16
+    "bcjobs": True,  # BC-focused board, robots.txt allows crawling — added 2026-10-16
     "odgers_berndtson": True,  # exec search firm's public opportunities board — confirmed live 2026-09-30
     # Not added: CIRI's Career Hub is member-login-gated (not scraping around
     # that); Product Marketing Alliance's jobs.* subdomain from the brief no
@@ -199,12 +259,28 @@ JOBBANK_QUERIES = [
     "product marketing",
 ]
 
+# Vancouver/BC/Canada focus, added 2026-10-16. Each list is looped in main.py.
+# Remote Rocketship /ca/ slugs were each checked live (communications,
+# senior-communications, product-marketing return Canada-eligible results;
+# government-relations and corporate-communications 404). Only the first ~20
+# jobs per slug are reachable — its ?page=N pagination doesn't actually page.
+RR_CA_QUERIES = ["senior-communications", "communications", "product-marketing"]
 # Wellfound location pages fetched each run (see fetch_wellfound in sources.py).
 # "vancouver" is the city page; "british-columbia" is the province page — confirmed
 # 2026-10-16 to return a broader set of startups than "vancouver" alone (5 pages vs.
 # 4, including companies outside Vancouver proper e.g. Victoria/Burnaby-based ones).
 # Overlap between the two is expected and harmless — main.py dedupes by job URL.
 WELLFOUND_LOCATIONS = ["vancouver", "british-columbia"]
+JOBBANK_VANCOUVER_QUERIES = [
+    "communications director", "director of communications", "government relations",
+    "investor relations", "stakeholder relations", "external affairs",
+    "corporate affairs", "product marketing", "chief of staff",
+]
+BCJOBS_QUERIES = [
+    "communications director", "director communications", "investor relations",
+    "government relations", "stakeholder relations", "external affairs",
+    "corporate affairs", "product marketing", "chief of staff",
+]
 
 # --- Storage ---
 SEEN_JOBS_FILE = "seen_jobs.json"

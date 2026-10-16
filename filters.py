@@ -20,14 +20,29 @@ from config import (
     TITLE_KEYWORDS_STRATEGIC_COMMS, TITLE_KEYWORDS_PRODUCT_MARKETING,
     SENIORITY_KEYWORDS, SECTOR_KEYWORDS_CORE, SECTOR_KEYWORDS_BROAD,
     LOCATION_REJECT_PHRASES, LOCATION_ACCEPT_PHRASES, CANADA_NATIVE_SOURCES,
+    LOCAL_BC_PHRASES, REMOTE_SIGNAL_PHRASES, REMOTE_NATIVE_SOURCES,
     FX_USD_TO_CAD, MIN_COMP_CAD, IDEAL_COMP_CAD_LOW, IDEAL_COMP_CAD_HIGH,
     MIN_COMP_CAD_PRODUCT_MARKETING,
 )
 
 
 def _contains_any(text, phrases):
+    """
+    Phrases that start/end with a letter or digit must match whole words —
+    plain substring matching made "mining" hit "determining", "app" hit
+    "application", and "canada" hit "canadian". Phrases that start/end with
+    punctuation (", bc", "(bc)", "sr.") skip the boundary on that side, since
+    the neighbouring character is naturally a letter or digit.
+    """
     text = text.lower()
-    return [p for p in phrases if p.lower() in text]
+    hits = []
+    for phrase in phrases:
+        p = phrase.lower()
+        left = r"(?<![a-z0-9])" if p[0].isalnum() else ""
+        right = r"(?![a-z0-9])" if p[-1].isalnum() else ""
+        if re.search(left + re.escape(p) + right, text):
+            hits.append(phrase)
+    return hits
 
 
 def evaluate_job(job):
@@ -66,18 +81,18 @@ def evaluate_job(job):
     # config.py, alongside the original energy/climate/tech/commodities set.
     core_hits = _contains_any(full_text, SECTOR_KEYWORDS_CORE)
     broad_hits = _contains_any(full_text, SECTOR_KEYWORDS_BROAD)
+    local_hits = _contains_any(f"{location} {title} {company} {desc}", LOCAL_BC_PHRASES)
+    sector_unknown = False
 
-    # Sector is a scoring signal for both tracks (changed 2026-09-30 — Track A's
+    # Sector is a scoring signal for both tracks (cloud decision 2026-09-30: a
     # hard sector gate was dropping legitimate senior comms/gov-relations roles
-    # at sector-relevant companies whose listing text just doesn't literally
-    # say "energy"/"climate"/etc., e.g. a power-generation company that only
-    # names itself. Sector match still boosts the score via _score_job's
-    # sector_is_core; it just no longer blocks the listing outright. Location
-    # (below) is the hard requirement instead.
+    # whose listing text just doesn't literally say "energy"/"climate"/etc.).
+    # A sector match boosts the score via _score_job; no match is kept, scored lower.
     if core_hits or broad_hits:
         reasons.append(f"sector match: {(core_hits or broad_hits)[0]!r}")
     elif track == "strategic_comms":
-        reasons.append("no energy/climate/fintech/healthtech/infrastructure sector signal found — kept anyway, scored lower")
+        sector_unknown = True
+        reasons.append("no target-sector signal found in the posting text — kept anyway, scored lower; check what the employer does")
     else:
         reasons.append("Track B — sector not required")
 
@@ -90,22 +105,37 @@ def evaluate_job(job):
         # Explicit US-only / must-be-US-authorized / visa-required language
         return False, False, 0, [f"location restriction found ({reject_hits[0]}) — not Canada-eligible"]
 
-    # Location is a hard requirement (changed 2026-09-30, alongside loosening
-    # the sector gate above): must be confirmed remote-eligible or Canada/
-    # Vancouver-based, not just "unclear" — an ambiguous listing is dropped
-    # rather than kept and flagged for manual verification.
-    location_confirmed = bool(accept_hits) or is_canada_native
-    if not location_confirmed:
+    # Geography tiers — Jared lives in Vancouver, so the target is Vancouver/BC
+    # work OR Canada-eligible remote. Canada roles that are neither local nor
+    # remote (e.g. onsite in Toronto) are kept but flagged, not rejected.
+    remote_signal = (
+        job.get("source") in REMOTE_NATIVE_SOURCES
+        or bool(_contains_any(f"{location} {title} {desc}", REMOTE_SIGNAL_PHRASES))
+    )
+    canada_confirmed = bool(accept_hits) or is_canada_native
+
+    is_strong_match = True
+    if local_hits:
+        geo_tier = "local_bc"
+        reasons.append(f"local: Vancouver/BC ({local_hits[0]})")
+    elif canada_confirmed and remote_signal:
+        geo_tier = "canada_remote"
+        reasons.append(f"Canada-eligible remote ({(accept_hits or [job.get('source')])[0]})")
+    elif canada_confirmed:
+        geo_tier = "canada_other"
+        reasons.append(
+            "Canada, but outside BC and not marked remote — likely onsite elsewhere, "
+            "verify relocation/remote before applying"
+        )
+        is_strong_match = False
+    else:
+        # Hard requirement (cloud decision 2026-09-30): must be confirmed
+        # remote-eligible or Canada/Vancouver/BC-based — an ambiguous listing is
+        # dropped rather than kept for manual verification.
         return False, False, 0, [
             "not confirmed remote-eligible or Vancouver/BC/Canada-based — "
             "required, so dropped rather than kept as ambiguous"
         ]
-
-    is_strong_match = True
-    if accept_hits:
-        reasons.append(f"Canada/remote eligibility confirmed ({accept_hits[0]})")
-    else:
-        reasons.append(f"Canada eligibility assumed — {job.get('source')} is a Canada-native board")
 
     # 5. Comp — judged in CAD; the floor depends on track (Track B trades comp
     # for equity/experience, so its floor is much lower — see config.py). An
@@ -123,14 +153,16 @@ def evaluate_job(job):
         reasons.append(f"comp meets the ${min_comp:,} CAD floor but below the ${IDEAL_COMP_CAD_LOW:,}+ ideal (~${comp_cad:,.0f} CAD)")
         is_strong_match = False
     elif track == "strategic_comms":
-        reasons.append(f"comp meets the ${IDEAL_COMP_CAD_LOW:,}-${IDEAL_COMP_CAD_HIGH:,} CAD target (~${comp_cad:,.0f} CAD)")
+        above = " — above your ceiling, still shown" if comp_cad > IDEAL_COMP_CAD_HIGH else ""
+        reasons.append(f"comp in your ${IDEAL_COMP_CAD_LOW:,}-${IDEAL_COMP_CAD_HIGH:,} CAD target band (~${comp_cad:,.0f} CAD){above}")
     else:
         reasons.append(f"comp meets the ${min_comp:,} CAD Track B floor (~${comp_cad:,.0f} CAD) — no upper target, comp is a trade-off vs. equity here")
 
     score = _score_job(
         sector_is_core=bool(core_hits),
+        sector_unknown=sector_unknown,
         seniority_hit=bool(seniority_hits),
-        location_confirmed=location_confirmed,
+        geo_tier=geo_tier,
         comp_cad=comp_cad,
     )
     reasons.append(f"match score: {score}/100")
@@ -138,19 +170,27 @@ def evaluate_job(job):
     return True, is_strong_match, score, reasons
 
 
-def _score_job(sector_is_core, seniority_hit, location_confirmed, comp_cad):
+LOCATION_POINTS = {
+    "local_bc": 30,        # Vancouver/BC — where Jared lives
+    "canada_remote": 30,   # remote and Canada-eligible — equally wanted
+    "canada_other": 18,    # Canada but onsite elsewhere — needs relocation
+    "unclear": 15,
+}
+
+
+def _score_job(sector_is_core, seniority_hit, geo_tier, comp_cad, sector_unknown=False):
     """
     0-100 fit estimate from the same signals evaluate_job already checked.
-    Weights: sector 35 (core) / 20 (broad tech-apps-commodities), seniority
-    15 (5 if absent — a soft signal, not a hard gate), location 30 confirmed
-    / 15 unclear, comp (CAD) 20 at/above the $150-180K ideal / 12 between the
-    $120K floor and the ideal / 10 unknown. Below-floor comp never reaches
-    this function (hard rejected earlier). Max is 100 for a core-sector,
-    senior-titled, Canada-confirmed listing at or above the comp ideal.
+    Weights: sector 35 (core) / 20 (broad), seniority 15 (5 if absent — a
+    soft signal, not a hard gate), location per LOCATION_POINTS (local BC and
+    Canada-remote tie at 30), comp (CAD) 20 at/above the $150-180K ideal / 12
+    between the floor and the ideal / 10 unknown. Below-floor comp never
+    reaches this function (hard rejected earlier). Max is 100 for a
+    core-sector, senior-titled, local-or-remote listing at/above the comp ideal.
     """
-    score = 35 if sector_is_core else 20
+    score = 12 if sector_unknown else (35 if sector_is_core else 20)
     score += 15 if seniority_hit else 5
-    score += 30 if location_confirmed else 15
+    score += LOCATION_POINTS[geo_tier]
     if comp_cad is None:
         score += 10
     elif comp_cad >= IDEAL_COMP_CAD_LOW:
@@ -161,14 +201,22 @@ def _score_job(sector_is_core, seniority_hit, location_confirmed, comp_cad):
 
 
 def _extract_comp_value(comp_str):
-    """Pull the highest number out of a comp string like '$155,000 - $185,000'."""
+    """
+    Highest figure in a comp string, as a whole number. Handles "$155,000 -
+    $185,000", "$60,000.00 annually" and the "k" shorthand ("$70k - $96k CAD").
+    Anything under $10,000 (hourly rates, equity percentages) is ignored, so an
+    hourly-only posting still reads as "comp unknown" rather than as a tiny salary.
+    """
     if not comp_str:
         return None
-    numbers = re.findall(r"[\d,]+", comp_str)
-    if not numbers:
-        return None
-    values = [int(n.replace(",", "")) for n in numbers if len(n.replace(",", "")) >= 5]
-    return max(values) if values else None
+    values = []
+    for number, k in re.findall(r"(\d[\d,]*(?:\.\d+)?)\s*([kK])?\b", comp_str):
+        value = float(number.replace(",", ""))
+        if k:
+            value *= 1000
+        if value >= 10_000:
+            values.append(value)
+    return int(max(values)) if values else None
 
 
 def _extract_comp_cad(comp_str, full_text, is_canada_native=False):
@@ -181,5 +229,13 @@ def _extract_comp_cad(comp_str, full_text, is_canada_native=False):
     value = _extract_comp_value(comp_str)
     if value is None:
         return None
-    is_cad = is_canada_native or "cad" in full_text or "cdn" in full_text or "c$" in comp_str.lower()
+    # whole-word match only: a bare substring test treated "academic" and
+    # "decade" as "cad". The comp string itself is checked too — Remote
+    # Rocketship and Wellfound write "CAD" right in the salary.
+    cad_marker = r"\b(cad|cdn)\b|c\$|ca\$"
+    is_cad = (
+        is_canada_native
+        or bool(re.search(cad_marker, comp_str.lower()))
+        or bool(re.search(cad_marker, full_text))
+    )
     return float(value) if is_cad else value * FX_USD_TO_CAD
