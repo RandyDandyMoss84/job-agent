@@ -40,8 +40,45 @@ from storage import (
 from emailer import compose_digest, send_digest
 
 
+def load_email_alert_jobs(path="email_alert_jobs.json"):
+    """
+    Jobs pulled out of Jared's own job-alert emails (LinkedIn) by the cloud
+    Routine, which reads them through the Gmail connector and writes this file
+    before main.py runs — LinkedIn/Indeed/Zip can't be scraped directly, but their
+    alert emails to Jared are his own mail. The file is untrusted text extracted
+    from email, so each entry is validated: plain strings only, and the link must
+    be an https LinkedIn job URL. A missing or malformed file is simply no jobs.
+    """
+    try:
+        with open(path) as f:
+            raw = json.load(f)
+    except (OSError, ValueError):
+        return []
+    jobs = []
+    for entry in raw if isinstance(raw, list) else []:
+        if not isinstance(entry, dict):
+            continue
+        title, url = entry.get("title"), entry.get("url")
+        if not (isinstance(title, str) and isinstance(url, str)):
+            continue
+        if not url.startswith("https://www.linkedin.com/jobs/view/"):
+            continue
+        jobs.append({
+            "title": title[:200],
+            "company": str(entry.get("company") or "")[:120] or None,
+            "location": str(entry.get("location") or "")[:120] or None,
+            "comp": str(entry.get("comp") or "")[:80] or None,
+            "url": url.split("?")[0],
+            "source": "LinkedIn job-alert email",
+            "raw_description": "",
+        })
+    return jobs
+
+
 def fetch_all_jobs():
     jobs = []
+
+    jobs += load_email_alert_jobs()
 
     if SOURCES_ENABLED.get("remote_rocketship"):
         try:

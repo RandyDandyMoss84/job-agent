@@ -21,6 +21,10 @@ TITLE_KEYWORDS_STRATEGIC_COMMS = [
     "regulatory affairs", "government relations", "government & stakeholder",
     "issues management", "reputation management", "indigenous relations",
     "indigenous & stakeholder", "chief of staff",
+    # added 2026-10-16 — public affairs is in the brief but was never matched
+    # (e.g. "Director, Government & External Relations" was silently dropped)
+    "public affairs", "government affairs", "external relations",
+    "stakeholder engagement", "community relations", "community engagement",
 ]
 
 # Track B — product marketing at startups (comp floor is much lower — see
