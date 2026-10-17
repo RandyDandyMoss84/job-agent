@@ -1,26 +1,823 @@
 {
-  "date": "2026-10-14",
-  "strong_matches": [],
-  "imperfect_matches": [
+  "date": "2026-10-17",
+  "strong_matches": [
     {
       "job": {
-        "title": "Communications & Community Engagement Manager, full-time, Ignatius Jesuit Centre, Guelph, Ontario",
-        "company": null,
-        "location": null,
-        "comp": null,
-        "url": "https://goodwork.ca/jobs/communications-events-and-engagement-jobs-with-non-profit-community-organizations-76817",
-        "source": "GoodWork.ca",
-        "raw_description": "Communications & Community Engagement Manager, full-time, Ignatius Jesuit Centre, Guelph, Ontario",
-        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
+        "title": "Tech Communications Lead",
+        "company": "Mercury",
+        "location": "United States; Canada",
+        "comp": "$142,400 - $197,800 per year",
+        "url": "https://boards.greenhouse.io/mercury/jobs/6223723004",
+        "source": "Remote Rocketship",
+        "raw_description": "Tech Communications Lead shaping Mercury\u2019s AI and fintech innovation narrative. Building executive thought leadership and integrated campaigns across media, podcasts, events, content, and social.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
       },
-      "score": 65,
+      "score": 85,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "sector match: 'tech'",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$272,964 CAD) \u2014 above your ceiling, still shown",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Communications Manager",
+        "company": "1Password",
+        "location": "United States; Canada",
+        "comp": "$137,000 - $199,000 per year",
+        "url": "https://jobs.ashbyhq.com/1password/08cb1ce3-984a-4878-b445-45632020d221",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Communications Manager shaping 1Password\u2019s cybersecurity, identity, and AI narratives. Building media, executive, event, and rapid-response communications for technical and business audiences.",
+        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "sector match: 'cybersecurity'",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$274,620 CAD) \u2014 above your ceiling, still shown",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director, Ads Product Marketing",
+        "company": "Instacart",
+        "location": "Canada",
+        "comp": "CA$203,000 - CA$214,000 per year CAD",
+        "url": "https://boards.greenhouse.io/instacart/jobs/8282656",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Instacart Ads product marketing director leading a team and building scalable advertising go-to-market strategies. Shaping product narratives, launches, advertiser education, and roadmap influence for Instacart's grocery platform.",
+        "company_stage": "Early-Stage Venture (round type doesn't pin down stage)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$214,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager",
+        "company": "Miovision",
+        "location": "Canada; United States",
+        "comp": "CA$115,000 - CA$140,000 per year CAD",
+        "url": "https://jobs.ashbyhq.com/miovision/3d8b322b-a46d-41e6-972e-8764c332b51f",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketing Manager shaping positioning, launches, and go-to-market strategy for Miovision\u2019s intelligent traffic hardware and software. Translating complex transportation technology into customer value and commercial growth.",
+        "company_stage": "Funded (Venture Round - Miovision) \u2014 stage unclear from round type"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "sector match: 'software'",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$140,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager",
+        "company": "Zapier",
+        "location": "United States; Canada",
+        "comp": "$174,200 - $261,200 per year",
+        "url": "https://jobs.ashbyhq.com/zapier/1e5d20ae-d2ce-4924-9957-73a8c7c17654",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketing Manager building enterprise go-to-market for Zapier's automation platform. Launching Sidekick, shaping governance positioning, and enabling enterprise sales.",
+        "company_stage": "Late-Stage / Secondary Market Activity (typically $500M+)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$360,456 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Director, Communications",
+        "company": "Canopy Planet Solutions",
+        "location": "Canada",
+        "comp": "CA$150,000 - CA$170,000 per year CAD",
+        "url": "https://canopyplanetsociety.bamboohr.com/careers/45",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior communications leader shaping Canopy\u2019s forest-protection campaigns. Guiding brand, storytelling, team leadership, and strategic partnerships to transform paper packaging and fashion supply chains.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$170,000 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications and Collaboration Lead",
+        "company": "Switch",
+        "location": "Canada",
+        "comp": "CA$90,770 - CA$107,789 per year CAD",
+        "url": "https://bchcohs.bamboohr.com/careers/73",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Communications lead advancing occupational health and safety across British Columbia\u2019s healthcare sector. Driving partner collaboration, engagement systems, and organization-wide communications.",
+        "company_stage": "Established (founded ~2000, 26+ yrs old)"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (british columbia)",
+        "comp in your $100,000-$150,000 CAD target band (~$107,789 CAD)",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Director, Enterprise Communications",
+        "company": "Onterris",
+        "location": "United States; Canada",
+        "comp": "$150,000 - $175,000 per year",
+        "url": "https://onterris.wd1.myworkdayjobs.com/ont/job/usa-ca-irvine-park-plaza/senior-director--enterprise-communications_r8781",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Director leading enterprise communications, executive messaging, and change strategy. Advancing transformation and organizational alignment for a global environmental solutions company.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$241,500 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Manager, Executive Communications",
+        "company": "Cohere",
+        "location": "United States; Canada",
+        "comp": "$195,000 - $240,000 per year",
+        "url": "https://jobs.ashbyhq.com/cohere/854ce13b-5a63-4d19-99e7-756a6e8bb84b",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Manager building executive communications for Cohere, a security-first enterprise AI company. Leading executive storytelling, corporate messaging, thought leadership, and rapid-response communications.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$331,200 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director of Canada Communications",
+        "company": "World Education Services",
+        "location": "Canada",
+        "comp": "CA$127,000 - CA$161,000 per year CAD",
+        "url": "https://recruiting.ultipro.com/wor1020wedu/JobBoard/e69cea0c-67ff-4625-8ec3-58d077d22d6b/OpportunityDetail?opportunityId=fe200c0f-8397-4131-a12a-9d3caab3ae94",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director of Canada Communications at World Education Services. Leading external communications strategies and engaging with stakeholders to enhance the organization's influence in Canada.",
+        "company_stage": "Established (founded ~1974, 52+ yrs old)"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$161,000 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director of Canada Communications",
+        "company": "World Education Services",
+        "location": "Canada",
+        "comp": "CA$127,000 - CA$161,000 per year CAD",
+        "url": "https://recruiting.ultipro.com/WOR1020WEDU/JobBoard/e69cea0c-67ff-4625-8ec3-58d077d22d6b/OpportunityDetail?opportunityId=fe200c0f-8397-4131-a12a-9d3caab3ae94",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director of Canada Communications at World Education Services managing external communications. Developing strategies to support influence and public affairs goals in Canada.",
+        "company_stage": "Established (founded ~1974, 52+ yrs old)"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$161,000 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Global Product Marketing Manager \u2013 Video",
+        "company": "Motorola Solutions",
+        "location": "Canada",
+        "comp": "CA$110,000 - CA$120,000 per year CAD",
+        "url": "https://motorolasolutions.wd5.myworkdayjobs.com/careers/job/ontario-remote-work/global-product-marketing-manager---video_r68999",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager owning Silent Sentinel camera marketing for Motorola Solutions. Developing messaging, launches, and sales enablement for Canadian federal government and defense customers.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$120,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Rewind",
+        "location": "Canada",
+        "comp": "CA$116,000 - CA$140,000 per year CAD",
+        "url": "https://jobs.ashbyhq.com/rewind/182ea3c9-5a23-44b4-a82d-14a53fe36e77",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager driving launches, positioning and sales enablement for Rewind\u2019s cloud data protection service. Building AI-powered marketing workflows and go-to-market programs.",
+        "company_stage": "Established (founded ~2015, 11+ yrs old)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$140,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Principal Product Marketing Manager, Competitive",
+        "company": "GitLab",
+        "location": "United States; Canada",
+        "comp": "$168,000 - $285,600 per year",
+        "url": "https://boards.greenhouse.io/gitlab/jobs/8859224002",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Principal Product Marketing Manager shaping GitLab\u2019s competitive position in AI and agentic software development.\nDriving market analysis, thought leadership, sales plays, and executive strategy for GitLab\u2019s DevSecOps platform.",
+        "company_stage": "Late-Stage / Secondary Market Activity (typically $500M+)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'software'",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$394,128 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications Business Partner, Water Quality",
+        "company": "Veralto",
+        "location": "Canada",
+        "comp": "CA$90,000 - CA$105,000 per year CAD",
+        "url": "https://veralto.wd1.myworkdayjobs.com/veraltocorporatejobs/job/ashland-virginia-united-states/communications-business-partner--water-quality-at-veralto_r10267237",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Communications Business Partner managing internal and external communications for Veralto\u2019s Water Quality segment. Advising executives on communication strategies and driving business objectives.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
+      },
+      "score": 67,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
-        "no energy/climate/fintech/healthtech/infrastructure sector signal found \u2014 kept anyway, scored lower",
-        "Canada eligibility assumed \u2014 GoodWork.ca is a Canada-native board",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$105,000 CAD)",
+        "match score: 67/100"
+      ]
+    }
+  ],
+  "imperfect_matches": [
+    {
+      "job": {
+        "title": "Senior ERP Product Marketing Manager \u2013 QuickBooks Migration",
+        "company": "Acumatica",
+        "location": "Serbia; Canada",
+        "comp": null,
+        "url": "https://jobs.smartrecruiters.com/acumatica/744000153021549-senior-erp-product-marketing-manager-quickbooks-migration-",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product marketing manager owning Acumatica\u2019s QuickBooks migration positioning and campaigns. Translating cloud ERP value for growing businesses across construction, manufacturing, distribution, and professional services.",
+        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
+      },
+      "score": 90,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "sector match: 'manufacturing'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 90/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Data Communications Administrator",
+        "company": "MGIS",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://mgisinc.zohorecruit.com/jobs/careers/552060000010242039/Senior-Data-Communications-Administrator?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Data Communications Administrator providing advanced technical leadership in network design and implementation. Support enterprise communications infrastructure for government clients in a remote capacity.",
+        "company_stage": "Established (founded ~2001, 25+ yrs old)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "sector match: 'infrastructure'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager",
+        "company": "Givelify",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/givelify/jobs/8845262002",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketing Manager shaping product marketing for Givelify\u2019s online and mobile giving platform. Driving customer research, messaging, launches, adoption, and growth across its two-sided marketplace.",
+        "company_stage": "Established (founded ~2013, 13+ yrs old)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director, Product Marketing \u2013 Go-to-Market",
+        "company": "Really Great Reading",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/reallygreatreading/jobs/4435712009",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product marketing director leading go-to-market strategy for Really Great Reading\u2019s literacy products. Driving launches, positioning, sales enablement, and customer adoption across schools and districts.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Head of Product Marketing \u2013 Growth",
+        "company": "Greenhouse Software",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/defuselabs/jobs/4997160101",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Head of Product Marketing & Growth positioning and launching near.com, Defuse Labs\u2019 permissionless financial account. Driving adoption across crypto, fintech, and digital-asset products.",
+        "company_stage": "Established (founded ~2012, 14+ yrs old)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "sector match: 'software'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Manager, Product Marketing, Client Expansion",
+        "company": "Foundant Technologies",
+        "location": "Canada; United States",
+        "comp": null,
+        "url": "https://ats.rippling.com/foundant-careers/jobs/b0f11694-a051-4558-9b4e-507f9eca2a39",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product marketing leader shaping SaaS positioning, launches, and sales enablement for Foundant\u2019s social-good software portfolio. Driving client upgrades, expansion, and renewals through targeted campaigns.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "sector match: 'software'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director, Product Marketing",
+        "company": "Miratech",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://jobs.smartrecruiters.com/miratech1/744000153199992-director-product-marketing",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director of Product Marketing translating Miratech\u2019s IT services into market-relevant solutions. Driving positioning, go-to-market strategy, sales enablement, and revenue growth.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director, Product Marketing",
+        "company": "Miratech",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://jobs.smartrecruiters.com/miratech1/744000153202829-director-product-marketing",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director of Product Marketing shaping go-to-market strategy for Miratech\u2019s global IT services and solutions. Translating technical offerings into differentiated value propositions and revenue growth.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "OCM Communications Lead",
+        "company": "Recruit Action inc.",
+        "location": "Canada",
+        "comp": "CA$75 - CA$85 per hour CAD",
+        "url": "https://recruteaction.zohorecruit.com/jobs/careers/60508000054892236/OCM-Communications-Lead-%E2%80%93-100-Remote-Toronto-ON-?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "OCM Communications Lead driving organizational change and communications for an insurance transformation initiative. Leading stakeholder engagement, readiness, adoption, and executive communications across Canada.",
+        "company_stage": "Established (founded ~2009, 17+ yrs old)"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "OCM Communications Lead",
+        "company": "Recruit Action inc.",
+        "location": "Canada",
+        "comp": "CA$75 - CA$85 per hour CAD",
+        "url": "https://recruteaction.zohorecruit.com/jobs/careers/60508000054892253/-OCM-Communications-Lead-%E2%80%93-100-Remote-Edmonton-AB-?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "OCM Communications Lead driving organizational change and communications for an insurance-sector transformation. Leading stakeholder adoption, readiness, executive messaging, and global rollout support remotely across Canada.",
+        "company_stage": "Established (founded ~2009, 17+ yrs old)"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "SVP, Global Head of Brand and Communications",
+        "company": "Nuvei",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://apply.workable.com/nuvei/j/1AF163DC6E",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior communications leader shaping Nuvei\u2019s global brand, narrative, and media strategy. Leading executive visibility, crisis communications, social media, and a high-performing communications team.",
+        "company_stage": "Funded (Post-IPO Secondary) \u2014 stage unclear from round type"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director of Communications",
+        "company": "Flashfood",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/flashfood/jobs/4382479009",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director of Communications shaping Flashfood\u2019s corporate narrative through media, creators, government, and NGO relations. Advancing the app-based marketplace\u2019s mission to reduce food waste and expand affordable-food access.",
+        "company_stage": "Funded (Series A - Flashfood) \u2014 stage unclear from round type"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing",
+        "company": "ElevenLabs",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://jobs.ashbyhq.com/elevenlabs/e062d169-7294-4125-bc7b-e3a821dcd620",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketer launching ElevenLabs\u2019 AI audio APIs for developers worldwide. Shaping technical messaging, documentation, demos, and developer-focused go-to-market campaigns.",
+        "company_stage": "Series A / Early Stage (typically $5M-$50M)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Staff Product Marketing Manager",
+        "company": "Keycard Labs",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://jobs.ashbyhq.com/keycard-labs/b1ac5f6d-9c1a-42e9-967f-daabfd51c05e",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Staff Product Marketing Manager shaping enterprise positioning, launches, and sales enablement for Keycard\u2019s agent identity infrastructure. Partnering with Sales, Product, founders, and security buyers.",
+        "company_stage": "Early Stage (founded ~2025, <2 yrs old, funding stage unknown)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'infrastructure'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Matomo",
+        "location": "Germany; Canada; Spain; Poland; United Kingdom; Belgium; Netherlands",
+        "comp": null,
+        "url": "https://jobs.lever.co/innocraft/634d3c70-55c2-48f2-a09c-f5ced36213e0",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager shaping positioning, launches and sales enablement for Matomo\u2019s privacy-focused analytics platform. Connecting customer insight with Product, Marketing and Sales to drive adoption and revenue.",
+        "company_stage": "Established (founded ~2007, 19+ yrs old)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Qualytics",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://jobs.ashbyhq.com/qualytics/5680ae7b-e1e0-4440-b72e-07f642cf0336",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager positioning Qualytics\u2019 data trust platform for enterprise buyers. Leading sales enablement, product launches, competitive insights, and go-to-market messaging.",
+        "company_stage": "Established Growth (founded ~2020, 6 yrs old, funding stage unknown)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications Coordinator, full-time, Alberta Environmental Network, remote, anywhere in Alberta",
+        "company": null,
+        "location": null,
+        "comp": null,
+        "url": "https://goodwork.ca/jobs/alberta-jobs-communications-marketing-and-journalism-jobs-76834",
+        "source": "GoodWork.ca",
+        "raw_description": "Communications Coordinator, full-time, Alberta Environmental Network, remote, anywhere in Alberta",
+        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (GoodWork.ca)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Strategic Communications Manager",
+        "company": "LiveHappy Initiative",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://livehappyinitiative.zohorecruit.com/jobs/careers/820307000005008045/Strategic-Communications-Manager-Remote-Flexible?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Strategic Communications Manager promoting LiveHappy Initiative\u2019s leadership and personal development programs. Generating interest, engaging prospects, and managing CRM communications independently.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Medical Communications Postdoctoral Fellowship",
+        "company": "Citrus Health Group",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/citrushealthgroup/jobs/5232450007",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "One-year medical communications fellowship developing scientific communications for pharmaceutical and biotech clients. Building Medical Writing and Scientific Director competencies through cross-functional agency work.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications Officer",
+        "company": "MenEngage Alliance",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://menengage.zohorecruit.in/jobs/careers/201255000000789004/Communications-Officer---one-year-fixed-term-contract?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Communications Officer crafting compelling communications for MenEngage Alliance's advocacy and activism. Collaborating with teams globally to promote gender justice and social issues.",
+        "company_stage": "Established (founded ~2007, 19+ yrs old)"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications Officer \u2013 Shifting Global Narratives on Masculinity",
+        "company": "MenEngage Alliance",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://menengage.zohorecruit.in/jobs/careers/201255000000789004/Communications-Officer-Shifting-global-narratives-on-masculinity?source=CareerSite",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Communications Officer enhancing narratives on masculinity for MenEngage Global Alliance. Lead communications efforts to engage men and boys in gender equality through storytelling and advocacy.",
+        "company_stage": "Established (founded ~2007, 19+ yrs old)"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Medical Communications Editor",
+        "company": "Prime Global",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://apply.workable.com/primeglobalpeople-join-us/j/9DA8AE29CE",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Editor reviewing and editing content outputs, ensuring grammatical accuracy and compliance with style guides for medical communications. Collaborating on project delivery and managing client expectations.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Manager, Marketing & Communications (12-month contract)",
+        "company": null,
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.bcjobs.ca/jobs/manager-marketing-communications-12-month-contract-vancouver-1677761",
+        "source": "BCjobs.ca",
+        "raw_description": "Manager, Marketing & Communications (12-month contract). Vancouver, BC",
+        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Manager, Advocacy + Communications",
+        "company": null,
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.bcjobs.ca/jobs/manager-advocacy-communications-vancouver-1674399",
+        "source": "BCjobs.ca",
+        "raw_description": "Manager, Advocacy + Communications. Vancouver, BC",
+        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Advisor, Indigenous Relations",
+        "company": null,
+        "location": "Trail, BC",
+        "comp": null,
+        "url": "https://www.bcjobs.ca/jobs/advisor-indigenous-relations-trail-1678678",
+        "source": "BCjobs.ca",
+        "raw_description": "Advisor, Indigenous Relations. Trail, BC",
+        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'indigenous relations')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (, bc)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
       ]
     }
   ]
