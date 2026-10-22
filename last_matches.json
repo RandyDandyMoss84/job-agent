@@ -1,101 +1,344 @@
 {
-  "date": "2026-10-18",
-  "strong_matches": [],
+  "date": "2026-10-22",
+  "strong_matches": [
+    {
+      "job": {
+        "title": "Senior Staff Technical Product Marketing Manager, Portfolio and Expansion",
+        "company": "1Password",
+        "location": "United States; Canada",
+        "comp": "$180,000 - $261,000 per year",
+        "url": "https://jobs.ashbyhq.com/1password/f56a7052-4fc3-4cc9-adf1-145e3ff83026",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Staff product marketer driving Unified Access, SaaS Manager, and portfolio expansion at 1Password, a cybersecurity company. Equipping enterprise sellers and CSMs with technical narratives, enablement, and cross-sell strategies.",
+        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "sector match: 'cybersecurity'",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$360,180 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Staff Technical Product Marketing Manager, Access Security",
+        "company": "1Password",
+        "location": "United States; Canada",
+        "comp": "$180,000 - $261,000 per year",
+        "url": "https://jobs.ashbyhq.com/1password/06df5109-358e-4e0b-a9d4-9fba67a028af",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Staff Product Marketing Manager advancing 1Password\u2019s enterprise access security solutions. Enabling sales motions for Enterprise Password Manager, Agentic Access, and Privileged Access.",
+        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$360,180 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Technical Product Marketing Manager",
+        "company": "LanceDB",
+        "location": "United States; Canada",
+        "comp": "$160,000 - $205,000 per year",
+        "url": "https://jobs.ashbyhq.com/lancedb/14683a83-c495-460e-92a3-e491eb6988e9",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Technical Product Marketing Manager creating technical proof, demos, benchmarks, and competitive enablement for LanceDB\u2019s AI-native multimodal data platform.",
+        "company_stage": "Growth Stage (founded ~2022, 4 yrs old, funding stage unknown)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$282,900 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director of Communications, Knowledge, Impact",
+        "company": "CRE Companies",
+        "location": "Canada",
+        "comp": "CA$101,657 - CA$118,924 per year CAD",
+        "url": "https://cre.bamboohr.com/careers/107",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Director leading communications, knowledge mobilization, and impact measurement for Indigenous Youth Roots. Amplifying Indigenous youth voices through strategy, campaigns, events, and accessible impact reporting.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$118,924 CAD)",
+        "match score: 77/100"
+      ]
+    }
+  ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Director, Government & External Relations",
-        "company": "Trans Mountain",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4479311600/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "title": "Bilingual Corporate Communications Specialist",
+        "company": "CLEAResult",
+        "location": "Canada",
+        "comp": "CA$35 - CA$37 per hour CAD",
+        "url": "https://clearesult.wd1.myworkdayjobs.com/clearesult_external_careers/job/remote---canada---qc/bilingual-corporate-communications-specialist_r0018349",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Bilingual communications specialist managing newsletters, intranet content, and French cultural review for CLEAResult\u2019s sustainable energy-efficiency programs. Coordinating communications projects across Ontario and Quebec.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
       },
-      "score": 67,
-      "reasons": [
-        "track: strategic_comms (matched 'external relations')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Director of Communications",
-        "company": "Hays",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4480128694/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 67,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Director, Indigenous Relations",
-        "company": "Trans Mountain",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4479306902/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 67,
-      "reasons": [
-        "track: strategic_comms (matched 'indigenous relations')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Senior Director of Communications",
-        "company": "Canopy",
-        "location": "Vancouver",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4479141047/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 67,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Communications Specialist",
-        "company": "Keycafe",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4480167650/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
+      "score": 80,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'energy'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 80/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketer, Financial Institutions",
+        "company": "OpenZeppelin",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://boards.greenhouse.io/openzeppelin/jobs/8036728003",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketer positioning OpenZeppelin\u2019s onchain finance security solutions for banks, asset managers, and market infrastructures. Leading institutional launches, AI-native sales enablement, and adoption.",
+        "company_stage": "Seed Stage (typically <$20M)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketer')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager",
+        "company": "Weflow | getweflow.com",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://join.com/companies/getweflowcom/16859602-senior-product-marketing-manager-m-f-d-remote",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager shaping Weflow\u2019s Revenue AI Platform positioning, website, and product narrative. Leading content, competitive research, and go-to-market launches for Salesforce-focused revenue teams.",
+        "company_stage": "Growth Stage (founded ~2021, 5 yrs old, funding stage unknown)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Vice President of Investor Relations",
+        "company": "Oak Hill Financial",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4481240421/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'investor relations')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Director, Strategic Communications",
+        "company": "Trinity Western University",
+        "location": "Langley, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4284575886/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (, bc)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Digital and Visual Communications Lead",
+        "company": "HelloKindred",
+        "location": "United States; Canada",
+        "comp": null,
+        "url": "https://jobs.smartrecruiters.com/hellokindred/3743990016315126-digital-and-visual-communications-lead",
+        "source": "Remote Rocketship",
+        "raw_description": "Digital and Visual Communications Lead creating SharePoint experiences and polished PowerPoint communications for an IT services client. Improving employee learning, sales enablement, and go-to-market content.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Head of Communications \u2013 New Media",
+        "company": "Supabase",
+        "location": "Worldwide; Canada-eligible",
+        "comp": null,
+        "url": "https://jobs.ashbyhq.com/supabase/62dfb104-ae18-46ce-a9ef-836f024c3d6d",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Head of Communications shaping Supabase\u2019s developer-focused new media strategy. Growing social accounts, elevating founders, and leading technically credible crisis communications.",
+        "company_stage": "Series B / Early Growth (typically $25M-$100M)"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Savvy Talent",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4481280547/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "McLean & Company",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://recruiting.ultipro.ca/INF5000IFTC/JobBoard/1cffe7b2-1234-4d4c-9533-76e0d034f72a/OpportunityDetail?opportunityId=68398aa8-69d8-49f3-b23c-e238d65f4694",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager rebuilding HR product messaging and collateral for McLean & Company. Driving go-to-market strategy, sales enablement, and launches for B2B offerings.",
+        "company_stage": "Established (founded ~1997, 29+ yrs old)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Info-Tech Research Group",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://recruiting.ultipro.ca/INF5000IFTC/JobBoard/2526a5be-e33e-4de9-90ae-3b23d42b9441/OpportunityDetail?opportunityId=68398aa8-69d8-49f3-b23c-e238d65f4694",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager rebuilding HR product collateral and value propositions for McLean & Company. Driving sales enablement, product launches, and account-based marketing strategy.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'tech'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Head of Marketing",
+        "company": "Globaltize",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4477641110/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 63,
+      "reasons": [
+        "track: product_marketing (matched 'head of marketing')",
+        "Track B \u2014 sector not required",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 63/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Communications Manager",
+        "company": "1Password",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4468839335/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 55,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 55/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Senior Communications Strategist",
+        "company": "Mash Strategy",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4478468288/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 55,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 55/100"
       ]
     }
   ]
