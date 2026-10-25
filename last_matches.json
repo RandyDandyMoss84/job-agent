@@ -1,177 +1,74 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "strong_matches": [
     {
       "job": {
-        "title": "Product Marketing Manager",
-        "company": "MaintainX",
-        "location": "Canada",
-        "comp": "CA$83,000 - CA$125,000 per year CAD",
-        "url": "https://jobs.ashbyhq.com/maintainx/eb0ae011-40e1-4d49-8ca2-d4267f451bfa",
+        "title": "Head of Communications",
+        "company": "Tailscale",
+        "location": "Canada; United States",
+        "comp": "CA$254,600 - CA$317,580 per year CAD",
+        "url": "https://boards.greenhouse.io/tailscale/jobs/4746913005",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager launching MaintainX\u2019s industrial work execution platform from alpha to general availability. Building messaging, enablement and adoption strategies for frontline operations teams.",
-        "company_stage": "Series D / Growth Stage (typically $100M-$500M)"
-      },
-      "score": 90,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "sector match: 'industrial'",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$125,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 90/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Senior Product Marketing Manager",
-        "company": "Grafana Labs",
-        "location": "United States; Canada; Germany; Ireland; Spain; Sweden; United Kingdom",
-        "comp": "$162,275 - $194,730 per year",
-        "url": "https://boards.greenhouse.io/grafanalabs/jobs/6233350004",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager growing Grafana Labs\u2019 cloud observability products. Driving positioning, lifecycle campaigns, enablement, and technical go-to-market strategy.",
-        "company_stage": "Established (founded ~2014, 12+ yrs old)"
-      },
-      "score": 85,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$268,727 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Senior Product Marketing Manager",
-        "company": "Grafana Labs",
-        "location": "United Kingdom; Canada; Germany; Ireland; Spain; Sweden; United States",
-        "comp": "\u00a391,755 - \u00a3110,106 per year",
-        "url": "https://boards.greenhouse.io/grafanalabs/jobs/6233351004",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager positioning Grafana Cloud observability products. Driving lifecycle campaigns, launches, technical content, and sales enablement for UK customers.",
-        "company_stage": "Established (founded ~2014, 12+ yrs old)"
-      },
-      "score": 85,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$151,946 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Senior Product Marketing Manager",
-        "company": "Grafana Labs",
-        "location": "Sweden; Canada; Germany; Ireland; Spain; United Kingdom; United States",
-        "comp": "SEK\u00a0775,444 - SEK\u00a0930,533 per year",
-        "url": "https://boards.greenhouse.io/grafanalabs/jobs/6233354004",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager positioning Grafana Labs\u2019 open-source observability products. Driving lifecycle campaigns, launches, enablement, and growth for Grafana Cloud.",
-        "company_stage": "Established (founded ~2014, 12+ yrs old)"
-      },
-      "score": 85,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$1,284,136 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "communications director",
-        "company": "BC Pension Corporation",
-        "location": "Victoria (BC)",
-        "comp": "$108,500.18 annually",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50566425",
-        "source": "Job Bank Canada",
-        "raw_description": "communications director",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+        "raw_description": "Head of Communications shaping global PR, product storytelling, and executive communications for Tailscale\u2019s secure connectivity platform. Building the communications function and team for global growth.",
+        "company_stage": "Series B / Early Growth (typically $25M-$100M)"
       },
       "score": 77,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC ((bc))",
-        "comp in your $100,000-$150,000 CAD target band (~$108,500 CAD)",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$317,580 CAD) \u2014 above your ceiling, still shown",
         "match score: 77/100"
       ]
     },
     {
       "job": {
-        "title": "Product Marketing Manager",
-        "company": "Wiser Solutions, Inc.",
-        "location": "Canada",
-        "comp": "CA$110,000 - CA$120,000 per year CAD",
-        "url": "https://jobs.smartrecruiters.com/wisersolutions/744000157578479-product-marketing-manager",
+        "title": "Head of Communications",
+        "company": "Tailscale",
+        "location": "United States; Canada",
+        "comp": "$190,000 - $237,000 per year",
+        "url": "https://boards.greenhouse.io/tailscale/jobs/4746917005",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager building Wiser\u2019s product-led growth motion for its ecommerce market intelligence platform. Owning positioning, trials, onboarding, funnel metrics, and sales enablement.",
-        "company_stage": "Seed Stage (typically <$20M)"
+        "raw_description": "Head of Communications shaping global PR, product storytelling, and executive communications for Tailscale's secure connectivity platform. Leading a distributed communications team and international media strategy.",
+        "company_stage": "Series B / Early Growth (typically $25M-$100M)"
       },
-      "score": 75,
+      "score": 77,
       "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$120,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
+        "comp in your $100,000-$150,000 CAD target band (~$327,060 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
       ]
     }
   ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "External Communications Manager",
-        "company": "Benevity",
+        "title": "Director, Strategic Partnerships & Campaign Communications",
+        "company": "St. Paul's Foundation",
         "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4481609775/",
+        "url": "https://www.linkedin.com/jobs/view/4482314800/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
-      "score": 57,
+      "score": 67,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
+        "match score: 67/100"
       ]
     },
     {
       "job": {
-        "title": "Content and Communications Specialist",
-        "company": "The University of British Columbia",
+        "title": "Manager, Strategic Communications (Permanent, Full-Time)",
+        "company": "Union Gospel Mission (Vancouver)",
         "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4482752280/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Marketing and Communications Coordinator",
-        "company": "UBC Properties Trust",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4482806612/",
+        "url": "https://www.linkedin.com/jobs/view/4466440040/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
