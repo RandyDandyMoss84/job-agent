@@ -1,37 +1,16 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "strong_matches": [
     {
       "job": {
         "title": "Product Marketing Manager",
-        "company": "Honeycomb.io",
-        "location": "United States; Canada",
-        "comp": "$125,000 - $190,000 per year",
-        "url": "https://boards.greenhouse.io/honeycomb/jobs/5464119008",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager shaping messaging, launches, content, and sales enablement for Honeycomb\u2019s developer observability platform. Partnering with technical go-to-market teams and customers.",
-        "company_stage": "Established Growth (founded ~2016, 10 yrs old, funding stage unknown)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$262,200 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Product Marketing Manager",
-        "company": "Honeycomb.io",
+        "company": "Wiser Solutions, Inc.",
         "location": "Canada",
-        "comp": "CA$171,000 - CA$261,000 per year CAD",
-        "url": "https://boards.greenhouse.io/honeycomb/jobs/5464121008",
+        "comp": "CA$110,000 - CA$120,000 per year CAD",
+        "url": "https://jobs.smartrecruiters.com/wisersolutions/744000158114362-product-marketing-manager",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager shaping messaging, launches, content, and enablement for Honeycomb\u2019s observability platform. Partnering with go-to-market teams to help engineers evaluate and adopt developer tools.",
-        "company_stage": "Established Growth (founded ~2016, 10 yrs old, funding stage unknown)"
+        "raw_description": "Product Marketing Manager owning positioning, launches, and product-led growth for Wiser\u2019s market intelligence platform. Building trials, onboarding, funnel analytics, and sales enablement.",
+        "company_stage": "Seed Stage (typically <$20M)"
       },
       "score": 75,
       "reasons": [
@@ -39,28 +18,7 @@
         "no explicit seniority keyword in title \u2014 check manually",
         "Track B \u2014 sector not required",
         "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$261,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Product Marketing Manager",
-        "company": "Haemonetics",
-        "location": "United States; United Kingdom; Canada",
-        "comp": "$103,600 - $176,400 per year",
-        "url": "https://haemonetics.wd5.myworkdayjobs.com/hae/job/boston-ma/manager--product-marketing_r10843",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product marketing manager driving downstream strategy and regulated medical-device launches for Haemonetics\u2019 IVT franchise. Translating clinical evidence into field-ready commercial content across global regions.",
-        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$243,432 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "comp meets the $100,000 CAD Track B floor (~$120,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
         "match score: 75/100"
       ]
     }
@@ -68,101 +26,59 @@
   "imperfect_matches": [
     {
       "job": {
-        "title": "Product Marketing Manager",
-        "company": "Imagine Communications",
-        "location": "Canada",
+        "title": "Senior Product Marketing Manager, Supplier",
+        "company": "Remarcable",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://careers-imaginecommunications.icims.com/jobs/2952/product-marketing-manager-%28remote-friendly%29/job?in_iframe=1",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager shaping go-to-market strategy for Imagine Communications\u2019 broadcast playout and infrastructure solutions. Translating complex media technology into buyer-focused messaging, content, and sales tools.",
-        "company_stage": "Early-Stage Venture (round type doesn't pin down stage)"
+        "url": "https://www.linkedin.com/jobs/view/4476489838/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
-      "score": 65,
+      "score": 75,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "sector match: 'infrastructure'",
-        "Canada-eligible remote (canada)",
+        "Track B \u2014 sector not required",
+        "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
+        "match score: 75/100"
       ]
     },
     {
       "job": {
-        "title": "Director, Policy & Government Relations",
-        "company": "New Economy Canada",
-        "location": "Canada",
+        "title": "Senior Product Marketing Manager, Marketing & Operations Audiences",
+        "company": "Asana",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4478836064/",
+        "url": "https://www.linkedin.com/jobs/view/4481466557/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
-      "score": 55,
+      "score": 75,
       "reasons": [
-        "track: strategic_comms (matched 'government relations')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
+        "match score: 75/100"
       ]
     },
     {
       "job": {
-        "title": "Director, Public Relations & Communications",
-        "company": "D2L",
-        "location": "Canada",
+        "title": "Director of Global Communications - Apex Legends",
+        "company": "Electronic Arts (EA)",
+        "location": "Greater Vancouver Metropolitan Area",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4473971427/",
+        "url": "https://www.linkedin.com/jobs/view/4455875786/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
-      "score": 55,
+      "score": 67,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Director, Government and External Affairs",
-        "company": "Jobgether",
-        "location": "Canada",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4481191683/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'external affairs')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Communications Specialist, full-time, CPAWS Southern Alberta, Calgary, Alberta",
-        "company": null,
-        "location": null,
-        "comp": null,
-        "url": "https://goodwork.ca/jobs/environmental-communications-journalism-and-marketing-jobs-76873",
-        "source": "GoodWork.ca",
-        "raw_description": "Communications Specialist, full-time, CPAWS Southern Alberta, Calgary, Alberta",
-        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
-      },
-      "score": 45,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 45/100"
+        "match score: 67/100"
       ]
     }
   ]
