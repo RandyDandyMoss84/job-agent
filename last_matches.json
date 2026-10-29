@@ -1,74 +1,34 @@
 {
-  "date": "2026-10-28",
-  "strong_matches": [
-    {
-      "job": {
-        "title": "Product Marketing Manager",
-        "company": "Wiser Solutions, Inc.",
-        "location": "Canada",
-        "comp": "CA$110,000 - CA$120,000 per year CAD",
-        "url": "https://jobs.smartrecruiters.com/wisersolutions/744000158114362-product-marketing-manager",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager owning positioning, launches, and product-led growth for Wiser\u2019s market intelligence platform. Building trials, onboarding, funnel analytics, and sales enablement.",
-        "company_stage": "Seed Stage (typically <$20M)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$120,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
-    }
-  ],
+  "date": "2026-10-29",
+  "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager, Supplier",
-        "company": "Remarcable",
-        "location": "Vancouver, BC",
+        "title": "Senior Product Marketing Manager \u2013 Technical Products",
+        "company": "ActiveProspect",
+        "location": "Canada",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4476489838/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "url": "https://activeprospect.applytojob.com/apply/vfrzyouiuo/sr-product-marketing-manager-technical-products-canada",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketing Manager driving GTM, positioning, pricing, and sales enablement for ActiveProspect\u2019s identity resolution and marketing intelligence products. Supporting consent-based marketing growth in a remote-first environment.",
+        "company_stage": "Series A / Early Stage (typically $5M-$50M)"
       },
       "score": 75,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
         "Track B \u2014 sector not required",
-        "local: Vancouver/BC (vancouver)",
+        "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 75/100"
       ]
     },
     {
       "job": {
-        "title": "Senior Product Marketing Manager, Marketing & Operations Audiences",
-        "company": "Asana",
-        "location": "Vancouver, BC",
+        "title": "Strategic Communications Team Lead, Western Canada",
+        "company": "HDR",
+        "location": "Vancouver",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4481466557/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Director of Global Communications - Apex Legends",
-        "company": "Electronic Arts (EA)",
-        "location": "Greater Vancouver Metropolitan Area",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4455875786/",
+        "url": "https://www.linkedin.com/jobs/view/4467827345/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
@@ -79,6 +39,147 @@
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Velixo",
+        "location": "North America; Canada-eligible",
+        "comp": null,
+        "url": "https://velixo.applytojob.com/apply/1ddz7ige1y/product-marketing-manager",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager shaping positioning, launches, and go-to-market strategy for Velixo\u2019s Excel-based ERP reporting software. Driving customer insights, enablement, case studies, and global commercial growth.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'software'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Solution Product Marketing Manager",
+        "company": "ActiveProspect",
+        "location": "Canada; United States",
+        "comp": null,
+        "url": "https://activeprospect.applytojob.com/apply/ocan8kk1xc/solution-product-marketing-manager-canada",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Remote Solution Product Marketing Manager shaping market strategy, positioning, and go-to-market execution for ActiveProspect\u2019s consent-based marketing and identity solutions.",
+        "company_stage": "Series A / Early Stage (typically $5M-$50M)"
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "C&EM Program Manager, Community Engagement",
+        "company": "FortisBC",
+        "location": "Surrey, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4474608735/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'community engagement')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (, bc)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Customer and Social Media Communications Specialist",
+        "company": "Aisle",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4483665603/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Global Corporate Communications Manager | Contract until April 2028",
+        "company": "lululemon",
+        "location": "Vancouver",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4469798034/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Head of Communications",
+        "company": "Tailscale",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4481066936/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 55,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 55/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "communications director",
+        "company": "ErinoakKids Center for Treatment and Development",
+        "location": "Mississauga (ON)",
+        "comp": "$72.13 hourly",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50606628",
+        "source": "Job Bank Canada",
+        "raw_description": "communications director",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 55,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 55/100"
       ]
     }
   ]
