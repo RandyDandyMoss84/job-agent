@@ -1,42 +1,86 @@
 {
-  "date": "2026-10-29",
-  "strong_matches": [],
-  "imperfect_matches": [
+  "date": "2026-10-30",
+  "strong_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager \u2013 Technical Products",
-        "company": "ActiveProspect",
+        "title": "Communications Lead",
+        "company": "Swimming Canada",
         "location": "Canada",
-        "comp": null,
-        "url": "https://activeprospect.applytojob.com/apply/vfrzyouiuo/sr-product-marketing-manager-technical-products-canada",
+        "comp": "CA$80,000 - CA$100,000 per year CAD",
+        "url": "https://swimmingcanada.bamboohr.com/careers/59",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager driving GTM, positioning, pricing, and sales enablement for ActiveProspect\u2019s identity resolution and marketing intelligence products. Supporting consent-based marketing growth in a remote-first environment.",
-        "company_stage": "Series A / Early Stage (typically $5M-$50M)"
+        "raw_description": "Communications Lead shaping Swimming Canada\u2019s communications strategy for competitive swimming, athletes, and high-performance programs. Leading media relations, crisis communications, content, and executive counsel.",
+        "company_stage": "Established (founded ~1909, 117+ yrs old)"
+      },
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$100,000 CAD)",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "Leap Tools",
+        "location": "Canada",
+        "comp": "CA$80,000 - CA$100,000 per year CAD",
+        "url": "https://jobs.gem.com/leap-tools/am9icG9zdDp_MpoO453ytTI8EOw1kaQs",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager leading furniture-sector go-to-market expansion for Leap Tools\u2019 interior d\u00e9cor visualization technology. Driving launches, sales enablement, industry relationships, and revenue growth.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
       "score": 75,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
         "Track B \u2014 sector not required",
         "Canada-eligible remote (canada)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "comp meets the $100,000 CAD Track B floor (~$100,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
         "match score: 75/100"
       ]
     },
     {
       "job": {
-        "title": "Strategic Communications Team Lead, Western Canada",
-        "company": "HDR",
-        "location": "Vancouver",
+        "title": "Product Marketing, Postgres",
+        "company": "ClickHouse",
+        "location": "North America; Canada-eligible",
+        "comp": "$200,000 - $280,000 per year",
+        "url": "https://jobs.ashbyhq.com/clickhouse/e30864bd-e36d-483f-8de2-a95d4aa3db26",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager launching ClickHouse\u2019s managed Postgres cloud offering. Building GTM strategy, messaging, collateral, and adoption for a unified transactional-analytics data stack.",
+        "company_stage": "Established Growth (founded ~2016, 10 yrs old, funding stage unknown)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$386,400 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    }
+  ],
+  "imperfect_matches": [
+    {
+      "job": {
+        "title": "VP, Communications",
+        "company": "Function Health",
+        "location": "United States; Canada",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4467827345/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "url": "https://jobs.gem.com/function-health/am9icG9zdDqDkk8EFKWfWTP7VXl96LJs",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "VP of Communications building earned media, creator relations, and corporate communications for Function Health\u2019s full-stack health system. Leading medical communications, executive visibility, crisis response, and team development.",
+        "company_stage": "Debt/Bridge Financing (stage varies)"
       },
       "score": 67,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 67/100"
       ]
@@ -44,72 +88,50 @@
     {
       "job": {
         "title": "Product Marketing Manager",
-        "company": "Velixo",
-        "location": "North America; Canada-eligible",
+        "company": "Motorola Solutions",
+        "location": "Greater Vancouver Metropolitan Area",
         "comp": null,
-        "url": "https://velixo.applytojob.com/apply/1ddz7ige1y/product-marketing-manager",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager shaping positioning, launches, and go-to-market strategy for Velixo\u2019s Excel-based ERP reporting software. Driving customer insights, enablement, case studies, and global commercial growth.",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 65,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "sector match: 'software'",
-        "Canada-eligible remote (canada)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Solution Product Marketing Manager",
-        "company": "ActiveProspect",
-        "location": "Canada; United States",
-        "comp": null,
-        "url": "https://activeprospect.applytojob.com/apply/ocan8kk1xc/solution-product-marketing-manager-canada",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Remote Solution Product Marketing Manager shaping market strategy, positioning, and go-to-market execution for ActiveProspect\u2019s consent-based marketing and identity solutions.",
-        "company_stage": "Series A / Early Stage (typically $5M-$50M)"
+        "url": "https://www.linkedin.com/jobs/view/4484743514/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
       "score": 65,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
         "no explicit seniority keyword in title \u2014 check manually",
         "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
+        "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 65/100"
       ]
     },
     {
       "job": {
-        "title": "C&EM Program Manager, Community Engagement",
-        "company": "FortisBC",
-        "location": "Surrey, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4474608735/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'community engagement')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (, bc)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Customer and Social Media Communications Specialist",
-        "company": "Aisle",
+        "title": "Product Marketing Manager",
+        "company": "Clio",
         "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4483665603/",
+        "url": "https://www.linkedin.com/jobs/view/4475762542/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 65,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Marketing and Communications Manager",
+        "company": "DMCL Chartered Professional Accountants",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4484752865/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
@@ -121,65 +143,6 @@
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Global Corporate Communications Manager | Contract until April 2028",
-        "company": "lululemon",
-        "location": "Vancouver",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4469798034/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Head of Communications",
-        "company": "Tailscale",
-        "location": "Canada",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4481066936/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "communications director",
-        "company": "ErinoakKids Center for Treatment and Development",
-        "location": "Mississauga (ON)",
-        "comp": "$72.13 hourly",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50606628",
-        "source": "Job Bank Canada",
-        "raw_description": "communications director",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
       ]
     }
   ]
