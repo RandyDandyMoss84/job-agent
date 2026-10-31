@@ -1,35 +1,15 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "strong_matches": [
-    {
-      "job": {
-        "title": "Communications Lead",
-        "company": "Swimming Canada",
-        "location": "Canada",
-        "comp": "CA$80,000 - CA$100,000 per year CAD",
-        "url": "https://swimmingcanada.bamboohr.com/careers/59",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Communications Lead shaping Swimming Canada\u2019s communications strategy for competitive swimming, athletes, and high-performance programs. Leading media relations, crisis communications, content, and executive counsel.",
-        "company_stage": "Established (founded ~1909, 117+ yrs old)"
-      },
-      "score": 77,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada-eligible remote (canada)",
-        "comp in your $100,000-$150,000 CAD target band (~$100,000 CAD)",
-        "match score: 77/100"
-      ]
-    },
     {
       "job": {
         "title": "Product Marketing Manager",
         "company": "Leap Tools",
         "location": "Canada",
         "comp": "CA$80,000 - CA$100,000 per year CAD",
-        "url": "https://jobs.gem.com/leap-tools/am9icG9zdDp_MpoO453ytTI8EOw1kaQs",
+        "url": "https://jobs.gem.com/leap-tools/am9icG9zdDpWPpElYMSLFjFj261p7AP3",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager leading furniture-sector go-to-market expansion for Leap Tools\u2019 interior d\u00e9cor visualization technology. Driving launches, sales enablement, industry relationships, and revenue growth.",
+        "raw_description": "Product Marketing Manager leading furniture-segment go-to-market strategy for Leap Tools\u2019 interior d\u00e9cor visualization technology. Driving launches, sales enablement, industry relationships, and revenue growth.",
         "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
       "score": 75,
@@ -41,97 +21,35 @@
         "comp meets the $100,000 CAD Track B floor (~$100,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
         "match score: 75/100"
       ]
-    },
-    {
-      "job": {
-        "title": "Product Marketing, Postgres",
-        "company": "ClickHouse",
-        "location": "North America; Canada-eligible",
-        "comp": "$200,000 - $280,000 per year",
-        "url": "https://jobs.ashbyhq.com/clickhouse/e30864bd-e36d-483f-8de2-a95d4aa3db26",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager launching ClickHouse\u2019s managed Postgres cloud offering. Building GTM strategy, messaging, collateral, and adoption for a unified transactional-analytics data stack.",
-        "company_stage": "Established Growth (founded ~2016, 10 yrs old, funding stage unknown)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$386,400 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
     }
   ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "VP, Communications",
-        "company": "Function Health",
-        "location": "United States; Canada",
+        "title": "Director, Strategic Communications",
+        "company": "BC Energy Regulator",
+        "location": "British Columbia",
         "comp": null,
-        "url": "https://jobs.gem.com/function-health/am9icG9zdDqDkk8EFKWfWTP7VXl96LJs",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "VP of Communications building earned media, creator relations, and corporate communications for Function Health\u2019s full-stack health system. Leading medical communications, executive visibility, crisis response, and team development.",
-        "company_stage": "Debt/Bridge Financing (stage varies)"
+        "url": "https://www.linkedin.com/jobs/view/4482552477/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
-      "score": 67,
+      "score": 90,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada-eligible remote (canada)",
+        "sector match: 'energy'",
+        "local: Vancouver/BC (british columbia)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
+        "match score: 90/100"
       ]
     },
     {
       "job": {
-        "title": "Product Marketing Manager",
-        "company": "Motorola Solutions",
-        "location": "Greater Vancouver Metropolitan Area",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4484743514/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 65,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Product Marketing Manager",
-        "company": "Clio",
+        "title": "Manager, Marketing and Communications",
+        "company": "QuadReal Property Group",
         "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4475762542/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 65,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Marketing and Communications Manager",
-        "company": "DMCL Chartered Professional Accountants",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4484752865/",
+        "url": "https://www.linkedin.com/jobs/view/4477194447/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
