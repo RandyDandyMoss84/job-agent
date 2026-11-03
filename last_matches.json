@@ -1,65 +1,67 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-03",
   "strong_matches": [
     {
       "job": {
-        "title": "Director, Product Marketing",
-        "company": "StackAdapt",
-        "location": "Canada; United States",
-        "comp": "CA$168,000 - CA$231,000 per year CAD",
-        "url": "https://boards.greenhouse.io/stackadapt/jobs/4391710009",
+        "title": "Director of Brand & Communications",
+        "company": "KittySpout",
+        "location": "Canada; United Kingdom; Ireland",
+        "comp": "$85,000 - $120,000 per year",
+        "url": "https://apply.workable.com/kittyspout/j/CD34841EF4",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Director of Product Marketing scaling go-to-market, adoption, and retention for StackAdapt\u2019s AI-powered advertising platform. Building and leading a world-class product marketing team.",
-        "company_stage": "Funded (Private Equity Round - StackAdapt) \u2014 stage unclear from round type"
+        "raw_description": "Brand and communications leader scaling a profitable DTC pet brand from $50M+ toward $100M+. Owning brand identity, cause partnerships, activations, community, and earned media.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
-      "score": 85,
+      "score": 77,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$165,600 CAD) \u2014 above your ceiling, still shown",
+        "match score: 77/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Product Marketing Manager",
+        "company": "TrustArc",
+        "location": "Canada",
+        "comp": "CA$100,000 - CA$145,000 per year CAD",
+        "url": "https://jobs.lever.co/trustarc/0e230824-ea8c-4043-9191-67c4e82f8911",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Product Marketing Manager advancing TrustArc\u2019s data privacy software adoption through messaging, content, research, and launches. Supporting sales enablement, customer adoption, and full-funnel marketing campaigns.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 75,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'software'",
         "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$231,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
+        "comp meets the $100,000 CAD Track B floor (~$145,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
       ]
     }
   ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager",
-        "company": "Appfire",
-        "location": "Canada",
+        "title": "Communications Coordinator",
+        "company": "Simon Fraser University",
+        "location": "Burnaby, BC",
         "comp": null,
-        "url": "https://boards.greenhouse.io/appfire/jobs/4739974005",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager shaping positioning, launches, demand, and enablement. Driving measurable growth for Appfire\u2019s B2B SaaS product portfolio.",
-        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "sector match: 'saas'",
-        "Canada-eligible remote (canada)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Director Communications & Engagement",
-        "company": "BC Financial Services Authority",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4484888967/",
+        "url": "https://www.linkedin.com/jobs/view/4484366118/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
-      "score": 67,
+      "score": 57,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "local: Vancouver/BC (burnaby)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
+        "match score: 57/100"
       ]
     }
   ]
