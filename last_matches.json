@@ -1,55 +1,14 @@
 {
-  "date": "2026-11-04",
-  "strong_matches": [
-    {
-      "job": {
-        "title": "Director, Product Marketing",
-        "company": "Loopio",
-        "location": "Canada; United States; India",
-        "comp": "CA$136,000 - CA$175,000 per year CAD",
-        "url": "https://jobs.ashbyhq.com/loopio/85def994-52a5-4bc2-9304-cb3c20fba5ed",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Director of Product Marketing leading pricing, launches, positioning, and sales enablement for Loopio\u2019s AI-native B2B SaaS portfolio. Remote role across Canadian hubs.",
-        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
-      },
-      "score": 85,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "sector match: 'saas'",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$175,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
-      ]
-    }
-  ],
+  "date": "2026-11-05",
+  "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Head of Product Marketing",
-        "company": "Akuity",
-        "location": "United States; Canada",
+        "title": "Product Marketing Manager, Operations",
+        "company": "Jobber",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://boards.greenhouse.io/akuity/jobs/4369070009",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Head of Product Marketing shaping messaging, launches, and GTM enablement for Akuity\u2019s enterprise software delivery platform. Building competitive intelligence, customer proof, metrics, and the product marketing team.",
-        "company_stage": "Growth Stage (founded ~2021, 5 yrs old, funding stage unknown)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "sector match: 'software'",
-        "Canada-eligible remote (canada)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Product Marketing Manager, Cameras & Sensors",
-        "company": "Motorola Solutions",
-        "location": "Greater Vancouver Metropolitan Area",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4478582648/",
+        "url": "https://www.linkedin.com/jobs/view/4485018961/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
@@ -65,22 +24,42 @@
     },
     {
       "job": {
-        "title": "communications director",
-        "company": "KittySpout",
-        "location": "Ottawa (ON)",
-        "comp": "$85,000.00 to $120,000.00 annually",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50658169",
-        "source": "Job Bank Canada",
-        "raw_description": "communications director",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+        "title": "Indigenous Relations Leader",
+        "company": "Pinchin Canada",
+        "location": "Richmond, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4470469746/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
-      "score": 65,
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'indigenous relations')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (, bc)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications Specialist",
+        "company": "The University of British Columbia",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4487058286/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp in your $100,000-$150,000 CAD target band (~$120,000 CAD)",
-        "match score: 65/100"
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
       ]
     }
   ]
