@@ -1,65 +1,65 @@
 {
-  "date": "2026-11-06",
-  "strong_matches": [
-    {
-      "job": {
-        "title": "Director of Product Marketing",
-        "company": "Remsoft",
-        "location": "Canada; Brazil",
-        "comp": "CA$115,000 - CA$160,000 per year CAD",
-        "url": "https://remsoft.bamboohr.com/careers/89",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Director of Product Marketing positioning Remsoft\u2019s AI-powered forestry and supply-chain software portfolio. Driving launches, cross-sell, sales enablement, and revenue growth.",
-        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
-      },
-      "score": 85,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "sector match: 'software'",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$160,000 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
-      ]
-    }
-  ],
+  "date": "2026-11-07",
+  "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Head of Marketing",
-        "company": "Savvy Talent",
-        "location": "Vancouver, BC",
+        "title": "Band 3 - Senior Manager, Communications &amp; Stakeholder Relations",
+        "company": null,
+        "location": "Burnaby, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4487583760/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "url": "https://www.bcjobs.ca/jobs/band-3-senior-manager-communications-amp-stakeholder-relations-burnaby-1681242",
+        "source": "BCjobs.ca",
+        "raw_description": "Band 3 - Senior Manager, Communications &amp; Stakeholder Relations. Burnaby, BC",
+        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
       },
-      "score": 75,
+      "score": 67,
       "reasons": [
-        "track: product_marketing (matched 'head of marketing')",
-        "Track B \u2014 sector not required",
-        "local: Vancouver/BC (vancouver)",
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (burnaby)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
+        "match score: 67/100"
       ]
     },
     {
       "job": {
-        "title": "Product Marketing Lead",
-        "company": "Canals",
-        "location": "United States; Canada",
+        "title": "Government Relations Advisor",
+        "company": "Vancouver Fraser Port Authority",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://jobs.ashbyhq.com/canals/dd17c784-abba-4b2b-b355-16b53d7f284e",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Lead building Canals' product marketing function and launching software for wholesale distributors. Developing messaging, enabling go-to-market teams, and driving adoption.",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+        "url": "https://www.linkedin.com/jobs/view/4462732420/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
-      "score": 75,
+      "score": 57,
       "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "sector match: 'software'",
-        "Canada-eligible remote (canada)",
+        "track: strategic_comms (matched 'government relations')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Business Development Manager \u2013 Indigenous Relations",
+        "company": "Sandvik",
+        "location": "Surrey, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4485858089/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'indigenous relations')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (, bc)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
       ]
     }
   ]
