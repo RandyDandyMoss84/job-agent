@@ -1,63 +1,23 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Band 3 - Senior Manager, Communications &amp; Stakeholder Relations",
-        "company": null,
-        "location": "Burnaby, BC",
-        "comp": null,
-        "url": "https://www.bcjobs.ca/jobs/band-3-senior-manager-communications-amp-stakeholder-relations-burnaby-1681242",
-        "source": "BCjobs.ca",
-        "raw_description": "Band 3 - Senior Manager, Communications &amp; Stakeholder Relations. Burnaby, BC",
-        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
-      },
-      "score": 67,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (burnaby)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Government Relations Advisor",
-        "company": "Vancouver Fraser Port Authority",
+        "title": "Gestionnaire principal, Communications avec les donateurs",
+        "company": "Canadian Cancer Society",
         "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4462732420/",
+        "url": "https://www.linkedin.com/jobs/view/4488197062/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
       "score": 57,
       "reasons": [
-        "track: strategic_comms (matched 'government relations')",
+        "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Business Development Manager \u2013 Indigenous Relations",
-        "company": "Sandvik",
-        "location": "Surrey, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4485858089/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'indigenous relations')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (, bc)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 57/100"
       ]
