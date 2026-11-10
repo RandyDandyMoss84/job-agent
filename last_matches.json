@@ -1,17 +1,56 @@
 {
-  "date": "2026-11-09",
-  "strong_matches": [],
+  "date": "2026-11-10",
+  "strong_matches": [
+    {
+      "job": {
+        "title": "Senior Product Marketing Manager \u2013 Lending",
+        "company": "Mercury",
+        "location": "United States; Canada",
+        "comp": "$153,900 - $192,300 per year",
+        "url": "https://boards.greenhouse.io/mercury/jobs/6253703004",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior Product Marketing Manager shaping Mercury\u2019s lending strategy and go-to-market execution. Helping businesses access financing through Mercury\u2019s integrated financial platform.",
+        "company_stage": "Established / Large Enterprise (1000+ employees, funding stage unknown)"
+      },
+      "score": 85,
+      "reasons": [
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$265,374 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 85/100"
+      ]
+    }
+  ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "VP/SVP, Medical Strategy \u2013 Medical Communications",
-        "company": "Avalere",
-        "location": "United States; Canada",
+        "title": "Senior Manager Provincial Government Affairs (Ontario and Western Canada)",
+        "company": "Johnson & Johnson Innovative Medicine",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://jobs.lever.co/avalerehealth/f7631181-d806-4004-a1aa-c50ed22973df",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Medical strategy executive guiding Oncology communications, HCP engagement, and promotional education for Avalere Health healthcare clients. Advising senior stakeholders and leading integrated growth strategies.",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+        "url": "https://www.linkedin.com/jobs/view/4488817253/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'government affairs')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 67/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Head of Communications (Remote)",
+        "company": "Joblet-AI",
+        "location": "Canada",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4487695958/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
       "score": 67,
       "reasons": [
