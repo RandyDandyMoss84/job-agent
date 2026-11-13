@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "strong_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager",
+        "title": "Senior Product Marketing Manager \u2013 Scaling Creators",
         "company": "Kit (formerly ConvertKit)",
         "location": "Worldwide; Canada-eligible",
         "comp": "$166,000 per year",
-        "url": "https://jobs.ashbyhq.com/kit/e3dee9f6-92f1-42c2-b93b-d983d17281a3",
+        "url": "https://jobs.ashbyhq.com/kit/4ac93164-8890-4815-86cf-f9d755def1d2",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager defining upmarket positioning and sales enablement for Kit, an email marketing platform helping creators grow audiences and businesses.",
+        "raw_description": "Senior Product Marketing Manager defining buyer strategy and sales enablement for Kit\u2019s creator email marketing platform. Driving inbound pipeline, win rate, deal size, and expansion revenue.",
         "company_stage": "Seed Stage (typically <$20M)"
       },
       "score": 85,
@@ -25,22 +25,42 @@
   "imperfect_matches": [
     {
       "job": {
-        "title": "Product Marketing Manager",
-        "company": "Leap Tools",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4489910275/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "title": "director, communications",
+        "company": "Queen's University",
+        "location": "Kingston (ON)",
+        "comp": "$108,000.00 to $147,000.00 annually (to be negotiated)",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50715544",
+        "source": "Job Bank Canada",
+        "raw_description": "director, communications",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
       "score": 65,
       "reasons": [
-        "track: product_marketing (matched 'product marketing')",
+        "track: strategic_comms (matched 'communications')",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp in your $100,000-$150,000 CAD target band (~$147,000 CAD)",
+        "match score: 65/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Marketing Communications Specialist",
+        "company": "Roylo Partners",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4489011901/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 65/100"
+        "match score: 57/100"
       ]
     }
   ]
