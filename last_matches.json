@@ -1,66 +1,111 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "strong_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager \u2013 Scaling Creators",
-        "company": "Kit (formerly ConvertKit)",
-        "location": "Worldwide; Canada-eligible",
-        "comp": "$166,000 per year",
-        "url": "https://jobs.ashbyhq.com/kit/4ac93164-8890-4815-86cf-f9d755def1d2",
+        "title": "Product Marketing Manager",
+        "company": "Ottimate",
+        "location": "United States; Canada",
+        "comp": "$120,000 - $135,000 per year",
+        "url": "https://apply.workable.com/ottimate/j/C9954A143E",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Senior Product Marketing Manager defining buyer strategy and sales enablement for Kit\u2019s creator email marketing platform. Driving inbound pipeline, win rate, deal size, and expansion revenue.",
-        "company_stage": "Seed Stage (typically <$20M)"
+        "raw_description": "Product Marketing Manager leading procurement and finance software go-to-market strategy at Ottimate. Shaping positioning, launches, competitive intelligence, and industry-specific marketing assets.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
-      "score": 85,
+      "score": 75,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'software'",
         "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$229,080 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 85/100"
+        "comp meets the $100,000 CAD Track B floor (~$186,300 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Enterprise B2B Communications Manager",
+        "company": "Cohere",
+        "location": "United States; Canada",
+        "comp": "$165,000 - $210,000 per year",
+        "url": "https://jobs.ashbyhq.com/cohere/d164d567-58d9-42fc-9e14-68d1dd2cb5a7",
+        "source": "Remote Rocketship",
+        "raw_description": "Enterprise communications manager translating Cohere\u2019s security-first AI technology into customer stories, campaigns, and executive communications. Building trust with business audiences and global enterprise partners.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 67,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada-eligible remote (canada)",
+        "comp in your $100,000-$150,000 CAD target band (~$289,800 CAD) \u2014 above your ceiling, still shown",
+        "match score: 67/100"
       ]
     }
   ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "director, communications",
-        "company": "Queen's University",
-        "location": "Kingston (ON)",
-        "comp": "$108,000.00 to $147,000.00 annually (to be negotiated)",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50715544",
-        "source": "Job Bank Canada",
-        "raw_description": "director, communications",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+        "title": "Bilingual Corporate Communications Specialist",
+        "company": "CLEAResult",
+        "location": "Canada",
+        "comp": "CA$35 - CA$37 per hour CAD",
+        "url": "https://clearesult.wd1.myworkdayjobs.com/clearesult_external_careers/job/remote---canada---on/bilingual-corporate-communications-specialist_r0018504",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Bilingual communications specialist supporting CLEAResult\u2019s sustainable, energy-efficient future. Managing English and French messaging, engagement channels, change communications, and Quebec-focused content.",
+        "company_stage": "Private Equity / Late Growth (typically $500M-$1B+)"
       },
-      "score": 65,
+      "score": 80,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp in your $100,000-$150,000 CAD target band (~$147,000 CAD)",
-        "match score: 65/100"
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'energy'",
+        "Canada-eligible remote (canada)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 80/100"
       ]
     },
     {
       "job": {
-        "title": "Marketing Communications Specialist",
-        "company": "Roylo Partners",
-        "location": "Vancouver, BC",
+        "title": "Community Engagement & Home Energy Coordinator (2 positions), 24 weeks, age 30 & under, January start, HomeZero Collective, Vernon BC",
+        "company": null,
+        "location": null,
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4489011901/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "url": "https://goodwork.ca/jobs/youth-communications-and-community-engagement-climate-action-jobs-76941",
+        "source": "GoodWork.ca",
+        "raw_description": "Community Engagement & Home Energy Coordinator (2 positions), 24 weeks, age 30 & under, January start, HomeZero Collective, Vernon BC",
+        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
       },
-      "score": 57,
+      "score": 68,
+      "reasons": [
+        "track: strategic_comms (matched 'community engagement')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "sector match: 'energy'",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 68/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "communications manager",
+        "company": "CENTURY PRIVATE SCHOOL",
+        "location": "Richmond Hill (ON)",
+        "comp": "$59.00 to $62.00 hourly (to be negotiated)",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50722071",
+        "source": "Job Bank Canada",
+        "raw_description": "communications manager",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
+      },
+      "score": 45,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
+        "match score: 45/100"
       ]
     }
   ]
