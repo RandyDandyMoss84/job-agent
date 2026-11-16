@@ -1,44 +1,25 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Senior Manager, Global Communications - Temporary",
-        "company": "Arc'teryx Equipment",
-        "location": "North Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4490508611/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "title": "director, communications",
+        "company": "Soci\u00e9t\u00e9 des mus\u00e9es du Qu\u00e9bec",
+        "location": "Montr\u00e9al (QC)",
+        "comp": "$45.05 hourly",
+        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50739072",
+        "source": "Job Bank Canada",
+        "raw_description": "director, communications",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
-      "score": 67,
+      "score": 55,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Communications Specialist",
-        "company": "Nch\u2019\u1e35ay\u0313 Development Corporation",
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4490732976/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
+        "match score: 55/100"
       ]
     }
   ]
