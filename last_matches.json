@@ -1,150 +1,26 @@
 {
-  "date": "2026-11-17",
-  "strong_matches": [
-    {
-      "job": {
-        "title": "Product Marketing Manager \u2013 Growth",
-        "company": "Kin Insurance",
-        "location": "United States; Canada",
-        "comp": "$139,000 - $166,500 per year",
-        "url": "https://jobs.ashbyhq.com/kin/4c726680-0077-44aa-b35e-402d76cf0110",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager shaping positioning and campaigns for Kin\u2019s homeowner insurance products. Driving landing-page testing, audience segmentation, and measurable conversion growth.",
-        "company_stage": "Established Growth (founded ~2016, 10 yrs old, funding stage unknown)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$229,770 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
-    }
-  ],
+  "date": "2026-11-18",
+  "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Senior Product Marketing Manager",
-        "company": "Acumatica",
-        "location": "Canada",
-        "comp": null,
-        "url": "https://jobs.smartrecruiters.com/acumatica/744000161893344-senior-product-marketing-manager-",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product marketing manager positioning Acumatica\u2019s cloud ERP for small businesses outgrowing QuickBooks. Developing industry messaging, campaigns, customer stories, demos, and enablement assets.",
-        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 75/100"
-      ]
-    },
-    {
-      "job": {
         "title": "Product Marketing Manager",
-        "company": "Akita AI Inc.",
+        "company": "LastPass",
         "location": "Canada",
         "comp": null,
-        "url": "https://jobs.dover.com/ture/6b6afc9f-91e1-4958-a905-a27debf0f1b6",
+        "url": "https://boards.greenhouse.io/lastpass/jobs/4751164005",
         "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager positioning Ture\u2019s AI-native career-transition platform for enterprise and public-sector buyers. Building messaging, launches, competitive intelligence, and sales enablement.",
-        "company_stage": "Early Stage (founded ~2024, <2 yrs old, funding stage unknown)"
+        "raw_description": "Product Marketing Manager owning positioning, launches, and sales enablement for LastPass secure access products. Translating complex cybersecurity capabilities into messaging that drives adoption and growth.",
+        "company_stage": "Established (founded ~2008, 18+ yrs old)"
       },
       "score": 65,
       "reasons": [
         "track: product_marketing (matched 'product marketing')",
         "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
+        "sector match: 'cybersecurity'",
         "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 65/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "communications director - sales and marketing",
-        "company": "Soci\u00e9t\u00e9 des mus\u00e9es du Qu\u00e9bec",
-        "location": "Montr\u00e9al (QC)",
-        "comp": "$45.05 hourly",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50739900",
-        "source": "Job Bank Canada",
-        "raw_description": "communications director - sales and marketing",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "manager, communications",
-        "company": "City of Regina",
-        "location": "Regina (SK)",
-        "comp": "$105,556.00 - $140,738.00",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50740148",
-        "source": "Job Bank Canada",
-        "raw_description": "manager, communications",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp in your $100,000-$150,000 CAD target band (~$140,738 CAD)",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "communications director",
-        "company": "Soci\u00e9t\u00e9 des mus\u00e9es du qu\u00e9bec",
-        "location": "Montr\u00e9al (QC)",
-        "comp": "$45.05 hourly",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50739513",
-        "source": "Job Bank Canada",
-        "raw_description": "communications director",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Communications & Marketing Specialist, Ecospark Environmental Organization, Toronto ON / Hybrid",
-        "company": null,
-        "location": null,
-        "comp": null,
-        "url": "https://goodwork.ca/jobs/marketing-communications-public-relations-journalism-and-social-media-jobs-76946",
-        "source": "GoodWork.ca",
-        "raw_description": "Communications & Marketing Specialist, Ecospark Environmental Organization, Toronto ON / Hybrid",
-        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
-      },
-      "score": 45,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 45/100"
       ]
     }
   ]
