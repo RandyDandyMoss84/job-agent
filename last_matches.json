@@ -1,42 +1,20 @@
 {
-  "date": "2026-11-20",
-  "strong_matches": [
-    {
-      "job": {
-        "title": "Product Marketing Manager",
-        "company": "League",
-        "location": "United States; Canada",
-        "comp": "$110,000 - $165,300 per year",
-        "url": "https://boards.greenhouse.io/leagueinc/jobs/6266538004",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "Product Marketing Manager translating Forge's AI platform capabilities into messaging, proof and sales enablement. Supporting healthcare buyers and sellers at League's digital healthcare experience company.",
-        "company_stage": "Established (founded ~2014, 12+ yrs old)"
-      },
-      "score": 75,
-      "reasons": [
-        "track: product_marketing (matched 'product marketing')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "Track B \u2014 sector not required",
-        "Canada-eligible remote (canada)",
-        "comp meets the $100,000 CAD Track B floor (~$228,114 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
-        "match score: 75/100"
-      ]
-    }
-  ],
+  "date": "2026-11-21",
+  "strong_matches": [],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Head of Public Relations",
-        "company": "Jetson",
-        "location": "North Vancouver, BC",
+        "title": "Director of Communications",
+        "company": "Hays",
+        "location": "Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4492036682/",
+        "url": "https://www.linkedin.com/jobs/view/4492707612/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
       "score": 67,
       "reasons": [
-        "track: strategic_comms (matched 'public relations')",
+        "track: strategic_comms (matched 'communications')",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
@@ -45,63 +23,22 @@
     },
     {
       "job": {
-        "title": "Advisor, Indigenous Relations",
-        "company": "Teck Resources Limited",
-        "location": "Greater Vancouver, BC",
+        "title": "Manager, External Relations Delivery",
+        "company": "ICBC (Insurance Corporation of British Columbia)",
+        "location": "North Vancouver, BC",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4491330901/",
+        "url": "https://www.linkedin.com/jobs/view/4492240530/",
         "source": "LinkedIn job-alert email",
         "raw_description": ""
       },
       "score": 57,
       "reasons": [
-        "track: strategic_comms (matched 'indigenous relations')",
+        "track: strategic_comms (matched 'external relations')",
         "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
         "local: Vancouver/BC (vancouver)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "Communications Manager, Content and Events",
-        "company": null,
-        "location": "Vancouver, BC",
-        "comp": null,
-        "url": "https://www.bcjobs.ca/jobs/communications-manager-content-and-events-vancouver-1682716",
-        "source": "BCjobs.ca",
-        "raw_description": "Communications Manager, Content and Events. Vancouver, BC",
-        "company_stage": "Unknown \u2014 BCjobs.ca list page doesn't show the employer"
-      },
-      "score": 57,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no explicit seniority keyword in title \u2014 check manually",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 57/100"
-      ]
-    },
-    {
-      "job": {
-        "title": "director, communications",
-        "company": "Legislative Assembly of New Brunswick",
-        "location": "Fredericton (NB)",
-        "comp": "$34.62 to $89.74 hourly",
-        "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50768549",
-        "source": "Job Bank Canada",
-        "raw_description": "director, communications",
-        "company_stage": "Unknown \u2014 no company-stage data available from this source"
-      },
-      "score": 55,
-      "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
-        "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 55/100"
       ]
     }
   ]
