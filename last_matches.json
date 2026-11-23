@@ -1,42 +1,66 @@
 {
-  "date": "2026-11-21",
-  "strong_matches": [],
+  "date": "2026-11-23",
+  "strong_matches": [
+    {
+      "job": {
+        "title": "Staff Product Marketer",
+        "company": "Webflow",
+        "location": "United States; Canada",
+        "comp": "$160,000 - $239,000 per year",
+        "url": "https://jobs.ashbyhq.com/webflow/6a836c0f-94f6-476e-89c6-9885d6043536",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Staff Product Marketer shaping messaging, launches, and pricing for Webflow\u2019s agentic web marketing platform. Driving customer understanding, adoption, and retention across product and marketing teams.",
+        "company_stage": "Series C / Growth Stage (typically $50M-$250M)"
+      },
+      "score": 75,
+      "reasons": [
+        "track: product_marketing (matched 'product marketer')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
+        "comp meets the $100,000 CAD Track B floor (~$329,820 CAD) \u2014 no upper target, comp is a trade-off vs. equity here",
+        "match score: 75/100"
+      ]
+    }
+  ],
   "imperfect_matches": [
     {
       "job": {
-        "title": "Director of Communications",
-        "company": "Hays",
-        "location": "Vancouver, BC",
+        "title": "Senior B2B Product Marketing Manager",
+        "company": "Mira",
+        "location": "Canada",
         "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4492707612/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "url": "https://miracare.na.teamtailor.com/jobs/737188-senior-b2b-product-marketing-manager",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Senior B2B Product Marketing Manager driving lead generation, campaigns, and partnerships for Mira\u2019s hormonal health and testing company. Fully remote role focused on healthcare professionals and B2B growth.",
+        "company_stage": "Early-Stage Venture (round type doesn't pin down stage)"
       },
-      "score": 67,
+      "score": 75,
       "reasons": [
-        "track: strategic_comms (matched 'communications')",
-        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "track: product_marketing (matched 'product marketing')",
+        "Track B \u2014 sector not required",
+        "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
-        "match score: 67/100"
+        "match score: 75/100"
       ]
     },
     {
       "job": {
-        "title": "Manager, External Relations Delivery",
-        "company": "ICBC (Insurance Corporation of British Columbia)",
-        "location": "North Vancouver, BC",
-        "comp": null,
-        "url": "https://www.linkedin.com/jobs/view/4492240530/",
-        "source": "LinkedIn job-alert email",
-        "raw_description": ""
+        "title": "Marketing & Communications Coordinator",
+        "company": "MakePossible by SCWIST",
+        "location": "Canada",
+        "comp": "CA$27 - CA$33 per hour CAD",
+        "url": "https://scwist.bamboohr.com/careers/58",
+        "source": "Remote Rocketship (CA)",
+        "raw_description": "Marketing coordinator advancing SCWIST\u2019s mission to expand women\u2019s and gender-diverse participation in Canadian STEM. Managing social content, campaigns, newsletters, website updates and event promotion.",
+        "company_stage": "Unknown \u2014 no company-stage data available from this source"
       },
       "score": 57,
       "reasons": [
-        "track: strategic_comms (matched 'external relations')",
+        "track: strategic_comms (matched 'communications')",
         "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "local: Vancouver/BC (vancouver)",
+        "Canada-eligible remote (canada)",
         "comp not listed \u2014 flagged as unknown, kept in digest",
         "match score: 57/100"
       ]
