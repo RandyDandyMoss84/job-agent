@@ -1,26 +1,88 @@
 {
-  "date": "2026-11-26",
-  "strong_matches": [
+  "date": "2026-11-27",
+  "strong_matches": [],
+  "imperfect_matches": [
     {
       "job": {
-        "title": "VP, Communications",
-        "company": "StackAdapt",
-        "location": "Canada; United States",
-        "comp": "CA$208,000 - CA$286,000 per year CAD",
-        "url": "https://boards.greenhouse.io/stackadapt/jobs/4520643009",
-        "source": "Remote Rocketship (CA)",
-        "raw_description": "VP leading global communications for StackAdapt\u2019s AI-powered advertising platform. Shaping corporate, media, executive, investor, and crisis communications to accelerate growth.",
-        "company_stage": "Funded (Private Equity Round - StackAdapt) \u2014 stage unclear from round type"
+        "title": "Marketing & Communications Coordinator",
+        "company": "Smythe LLP",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4494940820/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
       },
-      "score": 77,
+      "score": 57,
       "reasons": [
         "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
         "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
-        "Canada-eligible remote (canada)",
-        "comp in your $100,000-$150,000 CAD target band (~$286,000 CAD) \u2014 above your ceiling, still shown",
-        "match score: 77/100"
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Chief of Staff",
+        "company": "Trulioo",
+        "location": "Vancouver, BC",
+        "comp": null,
+        "url": "https://www.linkedin.com/jobs/view/4470220613/",
+        "source": "LinkedIn job-alert email",
+        "raw_description": ""
+      },
+      "score": 57,
+      "reasons": [
+        "track: strategic_comms (matched 'chief of staff')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "local: Vancouver/BC (vancouver)",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 57/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Communications and Outreach Coordinator, full-time, Nova Scotia Working Woodlands Trust, Caledonia, Nova Scotia",
+        "company": null,
+        "location": null,
+        "comp": null,
+        "url": "https://goodwork.ca/jobs/communications-and-outreach-coordinator-jobs-76986",
+        "source": "GoodWork.ca",
+        "raw_description": "Communications and Outreach Coordinator, full-time, Nova Scotia Working Woodlands Trust, Caledonia, Nova Scotia",
+        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
+      },
+      "score": 45,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 45/100"
+      ]
+    },
+    {
+      "job": {
+        "title": "Administrative and Communications Assistant, full-time, 1 year, Ecosource, Mississauga, GTA ON",
+        "company": null,
+        "location": null,
+        "comp": null,
+        "url": "https://goodwork.ca/jobs/administrative-assistant-jobs-and-communications-positions-76979",
+        "source": "GoodWork.ca",
+        "raw_description": "Administrative and Communications Assistant, full-time, 1 year, Ecosource, Mississauga, GTA ON",
+        "company_stage": "Unknown \u2014 GoodWork.ca doesn't expose company name separately"
+      },
+      "score": 45,
+      "reasons": [
+        "track: strategic_comms (matched 'communications')",
+        "no explicit seniority keyword in title \u2014 check manually",
+        "no target-sector signal found in the posting text \u2014 kept anyway, scored lower; check what the employer does",
+        "Canada, but outside BC and not marked remote \u2014 likely onsite elsewhere, verify relocation/remote before applying",
+        "comp not listed \u2014 flagged as unknown, kept in digest",
+        "match score: 45/100"
       ]
     }
-  ],
-  "imperfect_matches": []
+  ]
 }
